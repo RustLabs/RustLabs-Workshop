@@ -117,7 +117,96 @@ To configure your current shell run source $HOME/.cargo/env
    # open Visual Studio Code
    
    
-   - https://github.com/rust-lang/rls-vscode install rust extension 
+   - https://github.com/rust-lang/rls-vscode install rust extension
+   - open extension setting and select rust extension 
    
-   - 
+   ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/step1.png)
+   
+   -  enable cargo setting test following commands 
+      
+   
+ ```
+      
+  rustc
+Usage: rustc [OPTIONS] INPUT
+
+Options:
+    -h, --help          Display this message
+        --cfg SPEC      Configure the compilation environment
+    -L [KIND=]PATH      Add a directory to the library search path. The
+                        optional KIND can be one of dependency, crate, native,
+                        framework, or all (the default).
+    -l [KIND=]NAME      Link the generated crate(s) to the specified native
+                        library NAME. The optional KIND can be one of
+                        static, framework, or dylib (the default).
+        --crate-type [bin|lib|rlib|dylib|cdylib|staticlib|proc-macro]
+                        Comma separated list of types of crates
+                        for the compiler to emit
+        --crate-name NAME
+                        Specify the name of the crate being built
+        --edition 2015|2018
+                        Specify which edition of the compiler to use when
+                        compiling code.
+        --emit [asm|llvm-bc|llvm-ir|obj|metadata|link|dep-info|mir]
+                        Comma separated list of types of output for the
+                        compiler to emit
+        --print [crate-name|file-names|sysroot|target-libdir|cfg|target-list|target-cpus|target-features|relocation-models|code-models|tls-models|target-spec-json|native-static-libs]
+                        Compiler information to print on stdout
+    -g                  Equivalent to -C debuginfo=2
+    -O                  Equivalent to -C opt-level=2
+    -o FILENAME         Write output to <filename>
+        --out-dir DIR   Write output to compiler-chosen filename in <dir>
+        --explain OPT   Provide a detailed explanation of an error message
+        --test          Build a test harness
+        --target TARGET Target triple for which the code is compiled
+    -W, --warn OPT      Set lint warnings
+    -A, --allow OPT     Set lint allowed
+    -D, --deny OPT      Set lint denied
+    -F, --forbid OPT    Set lint forbidden
+        --cap-lints LEVEL
+                        Set the most restrictive lint level. More restrictive
+                        lints are capped at this level
+    -C, --codegen OPT[=VALUE]
+                        Set a codegen option
+    -V, --version       Print version info and exit
+    -v, --verbose       Use verbose output
+
+Additional help:
+    -C help             Print codegen options
+    -W help             Print 'lint' options and default settings
+    --help -v           Print the full set of options rustc accepts
+
+ sangam$ rustc hello-world.rs
+ sangam$ rustc hello-world
+error: couldn't read hello-world: stream did not contain valid UTF-8
+
+error: aborting due to previous error
+
+ sangam$ cargo new hello-world
+error: destination `/Users/sangam/Desktop/rustexample/hello-world` already exists
+
+Use `cargo init` to initialize the directory
+ sangam$ cargo init
+     Created binary (application) package
+sangam:Heroku_Go sangam$ cargo new hello-world
+error: destination `/Users/sangam/Desktop/rustexample/hello-world` already exists
+
+Use `cargo init` to initialize the directory
+ sangam$ cargo new hello-world
+     Created binary (application) `hello-world` package
+ sangam$ cargo run
+   Compiling Heroku_Go v0.1.0 (/Users/sangam/Desktop/rustexample/hello-world)
+warning: crate `Heroku_Go` should have a snake case name
+  |
+  = note: `#[warn(non_snake_case)]` on by default
+  = help: convert the identifier to snake case: `heroku_go`
+
+warning: 1 warning emitted
+
+    Finished dev [unoptimized + debuginfo] target(s) in 1.46s
+     Running 
+Hello, world!
+
+      
+  ```
 
