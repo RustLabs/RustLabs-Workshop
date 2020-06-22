@@ -114,4 +114,10 @@ To configure your current shell run source $HOME/.cargo/env
    
    
    ```
+   # open Visual Studio Code
+   
+   
+   - https://github.com/rust-lang/rls-vscode install rust extension 
+   
+   - 
 
