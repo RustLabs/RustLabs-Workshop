@@ -309,4 +309,4 @@ You wrote: Hello, world!
  (14 bytes) 
   
   ```
-[Rust Plaground](https://play.rust-lang.org/?version=stable&mode=release&edition=2018&gist=50d92b5a476e34d17b03fea0fb2655a9){: .btn .btn-purple .mr-2 }
+[Rust Plaground](https://play.rust-lang.org/?version=stable&mode=release&edition=2018&gist=62f8e490a5f25e4d08e893a51ac2c8a7){: .btn .btn-purple .mr-2 }
