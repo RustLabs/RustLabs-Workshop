@@ -124,7 +124,7 @@ To configure your current shell run source $HOME/.cargo/env
    
    -  enable cargo setting test following commands 
       
-   
+   ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/select_extension_setting.png)
  ```
       
   rustc
