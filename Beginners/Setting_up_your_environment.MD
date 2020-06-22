@@ -227,4 +227,83 @@ Hello, world!
  }
 
  ```
+ 
+ Let's expand it! These are variations on the preceding traditional `print` statement, showing some formatting options, parameters, and writing on streams, among other things. Let's start with some common prints (and imports):
+ ```
+ use std::io::{self, Write};
+use std::f64;fn main()
+ {    println!("Let's print some lines:");    
+ println!();    
+ println!("Hello, world!");  
+  println!("{}, {}!", "Hello", "world");   
+   print!("Hello, ");    
+   println!("world!");
+}
+ 
+ 
+ ```
+ However, we can do much more complex argument combinations:
+ ```
+ use std::io::{self, Write};
+use std::f64;fn main()
+ {    println!("Let's print some lines:");    
+ println!();    
+ println!("Hello, world!");  
+  println!("{}, {}!", "Hello", "world");   
+   print!("Hello, ");    
+   println!("world!");
+println!("Arguments can be referred to by their position: {0}, 
+{1}! and {1}, {0}! are built from the same arguments", "Hello", 
+"world");
 
+println!("Furthermore the arguments can be named: \"{greeting}, 
+{object}!\"", greeting = "Hello", object = "World");
+
+println!("Number formatting: Pi is {0:.3} or {0:.0} for short", 
+f64::consts::PI);
+
+println!("... and there is more: {0:>0width$}={0:>width$}=
+{0:#x}", 1535, width = 5);
+
+let _ = write!(&mut io::stdout(), "Underneath, it's all writing 
+to a stream...");
+println!();
+
+println!("Write something!");
+let mut input = String::new();
+if let Ok(n) = io::stdin().read_line(&mut input) {
+    println!("You wrote: {} ({} bytes) ", input, n);
+}
+else {
+    eprintln!("There was an error :(");
+}
+}
+
+ 
+ ```
+
+
+  - Go back to Terminal and navigate to the directory where `Cargo.toml` is located.
+  -  Use cargo run to see the snippet's output:
+  ```
+  $ cargo run
+   Compiling hello-world v0.1.0 (/tmp/hello-world)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.37s
+     Running 'target/debug/hello-world'
+Let's print some lines:
+
+Hello, world!
+Hello, world!
+Hello, world!
+Arguments can be referred to by their position: Hello, world! and world, Hello! are built from the same arguments
+Furthermore the arguments can be named: "Hello, World!"
+Number formatting: Pi is 3.142 or 3 for short
+... and there is more: 01535= 1535=0x5ff
+Underneath, it's all writing to a stream...
+Write something!
+Hello, world!
+You wrote: Hello, world!
+ (14 bytes) 
+  
+  ```
+[Rust Plaground](){: .btn .btn-purple .mr-2 }(https://play.rust-lang.org/?version=stable&mode=release&edition=2018&gist=50d92b5a476e34d17b03fea0fb2655a9)
