@@ -13,3 +13,18 @@
     - cargo
     - RLS (short for Rust Language Server—this is for autocompletion)
     - Rust language support for Visual Studio Code
+    
+  
+# Getting ready
+
+- On a computer running either macOS, Linux, or Windows, only a web browser and internet connection are required. Bear in mind that the Windows installation works a little bit different from the *nix systems (Linux and macOS), which use scripts. 
+
+# How to do it...
+
+Each of the parts requires us to navigate to their respective websites, download the installer, and follow their instructions:
+ 
+   -  Open the browser and navigate to (https://rustup.rs)and (https://code.visualstudio.com/)
+   -  Choose the installers fit for your operating system.
+   - After downloading, run the installers and follow their instructions, choosing the stable branches.
+   - Once successfully installed, we'll go deeper into each installation.
+
