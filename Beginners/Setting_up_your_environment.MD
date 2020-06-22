@@ -125,7 +125,8 @@ To configure your current shell run source $HOME/.cargo/env
    -  enable cargo setting test following commands 
       
    ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/select_extension_setting.png)
- ```
+
+```
       
   rustc
 Usage: rustc [OPTIONS] INPUT
@@ -243,6 +244,7 @@ use std::f64;fn main()
  
  ```
  However, we can do much more complex argument combinations:
+ 
  ```
  use std::io::{self, Write};
 use std::f64;fn main()
@@ -285,6 +287,7 @@ else {
 
   - Go back to Terminal and navigate to the directory where `Cargo.toml` is located.
   -  Use cargo run to see the snippet's output:
+  
   ```
   $ cargo run
    Compiling hello-world v0.1.0 (/tmp/hello-world)
@@ -306,4 +309,4 @@ You wrote: Hello, world!
  (14 bytes) 
   
   ```
-[Rust Plaground](){: .btn .btn-purple .mr-2 }(https://play.rust-lang.org/?version=stable&mode=release&edition=2018&gist=50d92b5a476e34d17b03fea0fb2655a9)
+[Rust Plaground](https://play.rust-lang.org/?version=stable&mode=release&edition=2018&gist=50d92b5a476e34d17b03fea0fb2655a9){: .btn .btn-purple .mr-2 }
