@@ -23,7 +23,7 @@
 
 Each of the parts requires us to navigate to their respective websites, download the installer, and follow their instructions:
  
-   -  Open the browser and navigate to (https://rustup.rs)and (https://code.visualstudio.com/)
+   -  Open the browser and navigate to (https://rustup.rs) and (https://code.visualstudio.com/)
    -  Choose the installers fit for your operating system.
    - After downloading, run the installers and follow their instructions, choosing the stable branches.
    - Once successfully installed, we'll go deeper into each installation.
