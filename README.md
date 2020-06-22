@@ -17,7 +17,7 @@ The Ultimate Workshop Track Specially Designed For You - Select Learning Paths
 
 # Rust Developer Roadmap 2020
 
- ![Rust Developer Roadmap 2020]()
+ ![Rust Developer Roadmap 2020](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/rust-web-developer-roadmap.png)
  
 If you are finding this young project interesting, do support us by clicking on "Star" ath the top right of this screen.
 
