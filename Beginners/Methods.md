@@ -1,3 +1,10 @@
+---
+layout: default
+title: Methods
+parent: Rust for Beginners
+nav_order: 9
+---
+
 # Methods
 
 - We can add methods on custom types. Let's write a method to compute the distance of a point to the origin:
