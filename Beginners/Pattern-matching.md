@@ -1,3 +1,12 @@
+---
+layout: default
+title: Enumerations
+parent: Rust for Beginners
+nav_order: 12
+---
+
+
+
 # Pattern matching
 
 So how can we know which variant is in a variable whose type is an enumeration and how to get the values out of it?
