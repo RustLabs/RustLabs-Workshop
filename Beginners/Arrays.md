@@ -1,3 +1,11 @@
+---
+layout: default
+title: Array
+parent: Rust for Beginners
+nav_order: 15
+---
+
+
 # Array
 
 An array is a fixed-size collection of elements of the same type. We declare them with square brackets:
