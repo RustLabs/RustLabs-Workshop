@@ -1,3 +1,11 @@
+---
+layout: default
+title: Creating functions
+parent: Rust for Beginners
+nav_order: 6
+---
+
+
 # Creating functions
 
 - We had a brief introduction to functions when we saw the main function. Let's see how to create functions with parameters and a return value.
