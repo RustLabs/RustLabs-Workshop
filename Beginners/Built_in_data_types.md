@@ -1,3 +1,10 @@
+---
+layout: default
+title:  Built-in data types
+parent: Rust for Beginners
+nav_order: 4
+---
+
 # Built-in data types
 - Let's look at the basic types provided by the language, such as integers, floats, Booleans, and characters.
 
