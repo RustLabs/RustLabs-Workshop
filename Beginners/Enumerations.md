@@ -1,3 +1,10 @@
+---
+layout: default
+title: Enumerations
+parent: Rust for Beginners
+nav_order: 11
+---
+
 # Enumerations
 
 While a structure allows us to get multiple values under the same variable, enumerations allow us to choose one value from different types of values.
