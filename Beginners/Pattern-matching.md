@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enumerations
+title: Pattern matching
 parent: Rust for Beginners
 nav_order: 12
 ---
