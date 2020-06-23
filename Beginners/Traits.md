@@ -1,3 +1,11 @@
+---
+layout: default
+title: Traits
+parent: Rust for Beginners
+nav_order: 13
+---
+
+
 # Traits
 
 Traits are a way to specify that a type must implement some methods and/or some types. 
