@@ -1,3 +1,11 @@
+---
+layout: default
+title: Macros
+parent: Rust for Beginners
+nav_order: 16
+---
+
+
 # Macros
 
 Macro rules, also called macros by example, are a way to avoid code duplication by generating code at compile time.
