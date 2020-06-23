@@ -1,3 +1,10 @@
+---
+layout: default
+title: Control flow
+parent: Rust for Beginners
+nav_order: 5
+---
+
 # Control flow
 
 We'll now look at how to write conditions and loops in Rust. Conditions are useful to execute a block of code when a certain situation happens, 
