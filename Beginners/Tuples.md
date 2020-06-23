@@ -1,3 +1,11 @@
+---
+layout: default
+title: Tuples
+parent: Rust for Beginners
+nav_order: 10
+---
+
+
 # Tuples
 
 Tuples and structures are similar, except that tuples' fields are unnamed. Tuples are declared inside parentheses, 
