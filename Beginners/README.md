@@ -1,3 +1,12 @@
+---
+layout: default
+title: Rust for Beginners
+nav_order: 2
+has_children: true
+has_toc: true
+permalink: 
+---
+
 #  Starting Off with Rust
 
 The Rust ecosystem has grown considerably over the last year, and the 2018 edition, in particular, brought a significant push toward stabilization. The tooling is developing and important libraries are maturing to a point where many bigger companies use Rust in production.
