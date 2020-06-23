@@ -1,3 +1,10 @@
+---
+layout: default
+title: Creating Structures
+parent: Rust for Beginners
+nav_order: 7
+---
+
 # Creating structures
 
 - Sometimes, we have multiple values that only make sense together, such as the two coordinates of a point.
