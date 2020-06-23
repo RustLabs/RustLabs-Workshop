@@ -1,3 +1,10 @@
+---
+layout: default
+title:  Setting up your environment
+parent: Rust for Beginners
+nav_order: 1
+---
+
 #  Setting up your environment
 
 
