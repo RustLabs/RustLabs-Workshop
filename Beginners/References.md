@@ -1,3 +1,10 @@
+---
+layout: default
+title: References
+parent: Rust for Beginners
+nav_order: 8
+---
+
 # References
 Let's try the following code, which would work in other programming languages:
 ```
