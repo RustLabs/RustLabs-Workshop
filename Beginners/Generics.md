@@ -1,3 +1,10 @@
+---
+layout: default
+title: Generics
+parent: Rust for Beginners
+nav_order: 14
+---
+
 # Generics
 
 Generics are a way to make a function or a type work for multiple types to avoid code duplication. Let's rewrite our` max` function to make it generic:
