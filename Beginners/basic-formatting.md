@@ -101,6 +101,7 @@ fn main() {
 # Quiz 
 
 1. What is the output of the following code?
+
 ```
 fn main() {
     println!("Enhance your coding skills from {1} courses.  {0} courses are very {1}", "kubedaily", "interactive");
@@ -112,6 +113,7 @@ b) Enhance your coding skills from interactive courses. kubedaily courses are ve
 
 
 2. What is the output of the following code?
+
 ```
 fn main() {
     println!("{}{}", 2, 1);
