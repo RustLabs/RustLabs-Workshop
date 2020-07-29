@@ -64,6 +64,7 @@ If we want to convert the value to binary, hexadecimal, or octal write:
 {:b},{:x},{:o}
 
 ```
+
 In the placeholder for binary, hexadecimal, or octal respectively and in the value specify the number.
 You can use all three of them or one of them in a single expression.
 
@@ -73,6 +74,7 @@ fn main() {
 }
 
 ```
+
 # Basic Math 
 
 We can perform basic math and the placeholder gets replaced with the result.
@@ -83,6 +85,7 @@ fn main() {
 }
 
 ```
+
 # Placeholder for a Debug Trait 
 
 It is possible to display multiple values using a single placeholder with the help of the debug trait (a colon followed by a question mark {:?}).
@@ -96,8 +99,8 @@ fn main() {
     println!("{:?}", ("This is a Rust Course", 101));
 }
 
-
 ```
+
 # Quiz 
 
 1. What is the output of the following code?
@@ -108,6 +111,7 @@ fn main() {
 }
 
 ```
+
 a) Enhance your coding skills from kubedaily courses. kubedaily courses are very interactive <br>
 b) Enhance your coding skills from interactive courses. kubedaily courses are very interactive <br>
 
@@ -118,7 +122,6 @@ b) Enhance your coding skills from interactive courses. kubedaily courses are ve
 fn main() {
     println!("{}{}", 2, 1);
 }
-
 
 ```
 a) 21 <br>
