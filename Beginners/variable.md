@@ -11,9 +11,13 @@ nav_order: 10
 
 A variable is like a storage box paired with an associated name which contains data. The associated name is the identifier and the data that goes inside the variable is the value. They are immutable by default, meaning, you cannot reassign value to them.
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/variable.png)
+
 # Create a Variable 
 
 To create a variable, use the let binding followed by the variable name.
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/var-syntax.png)
 
 - What is binding?
 
@@ -27,6 +31,8 @@ Rust refers to declarations as bindings as they bind a name at the time of creat
 # Initialize a Variable 
 
 A variable can be initialized by assigning a value to it when it is declared. The value is said to be bound to that variable.  
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/init-var.png)
 
 Note: It’s possible to declare the variable first and assign it a value later. However, it is not recommended to do this as it may lead to the use of uninitialized variables.
 
@@ -46,6 +52,8 @@ Note: Just like numbers it is not possible to directly print a variable within a
 
 At the beginning of this lesson, it was mentioned that a variable is immutable until you want to make a change in the variable, then it can be made mutable. To make a variable mutable, write let followed by the mut keyword and the variable name
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/init-mut-var.png)
+
 ```
 fn main() {
     let mut language = "Rust"; // define a mutable variable
@@ -60,6 +68,8 @@ fn main() {
 # Assigning Multiple Variables 
 
 It is possible to assign multiple variables in one statement.
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/multi-var.png)
 
 ```
 
