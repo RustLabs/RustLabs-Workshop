@@ -83,8 +83,8 @@ b) store primitive data <br>
 c) store reference to a data <br> 
 
 2. Which of the following code snippets help to make a mutable variable?<br> 
-a) `let course_name = "Rust";`
-b) `let mut course_name = "Rust";`
+a) `let course_name = "Rust";` <br> 
+b) `let mut course_name = "Rust";`<br> 
 
 
 
