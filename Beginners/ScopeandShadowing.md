@@ -84,5 +84,62 @@ inner variable: 213
 Variable shadowing is a technique in which a variable declared within a certain scope has the same name as a variable declared in an outer scope. This is also known as masking. This outer variable is said to be shadowed by the inner variable, while the inner variable is said to mask the outer variable.
 
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/Shadowing.png) 
+
+The following code explains the concept.
+
+```
+
+fn main() {
+  let outer_variable = 112;
+  { // start of code block
+        let inner_variable = 213;
+        println!("block variable: {}", inner_variable);
+        let outer_variable = 117;
+        println!("block variable outer: {}", outer_variable);
+  } // end of code block
+    println!("outer variable: {}", outer_variable);
+  }
+
+```
+
+Output
+```
+
+block variable: 213
+block variable outer: 117
+outer variable: 112
+
+```
+
+# Quiz 
+
+Test your understanding of variables!
+
+1. A variable cannot be accessed outside it’s scope. <br> 
+a) True <br> 
+b) False <br> 
+
+2. What is the output of the following code? <br> 
+```
+fn main(){
+   let a=1;
+  {
+         let b=1;
+  }
+  println!("The value of b is {}",b);
+}
+
+
+```
+a) The value of b is 1 <br> 
+b) Compile time error <br> 
+
+
+
+
+
+
+
 
 
