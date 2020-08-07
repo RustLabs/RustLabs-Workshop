@@ -121,7 +121,9 @@ a) True <br>
 b) False <br> 
 
 2. What is the output of the following code? <br> 
+
 ```
+
 fn main(){
    let a=1;
   {
@@ -132,8 +134,14 @@ fn main(){
 
 
 ```
+
 a) The value of b is 1 <br> 
 b) Compile time error <br> 
+
+3. A variable that takes the same name in the inner block as that of variable in the outer block. This concept is called <br> 
+a) Scope of a variable <br> 
+b) Shadowing <br> 
+
 
 
 
