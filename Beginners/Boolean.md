@@ -73,7 +73,9 @@ Test your understanding of boolean data type in Rust!
 
 
 1. What is the output of the following code? <br> 
+
 ```
+
 let value = 13 > 20;
 println!("{}", value);
 
