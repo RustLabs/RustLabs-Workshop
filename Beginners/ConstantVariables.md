@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tuples
+title: Constant Variables
 parent: Rust for Beginners
 nav_order: 20
 ---
