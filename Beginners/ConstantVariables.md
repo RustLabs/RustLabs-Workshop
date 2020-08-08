@@ -1,3 +1,9 @@
+---
+layout: default
+title: Tuples
+parent: Rust for Beginners
+nav_order: 20
+---
 
 # What Are Constant Variables? 
 
