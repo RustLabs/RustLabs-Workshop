@@ -6,7 +6,8 @@ description: " An Ultimate RustLabs Hands-on Labs  "
 permalink: /
 ---
 [Join RustLabs Community](https://discord.gg/aU3yAmF){: .btn .btn-green .mr-4 } [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K0E60M)
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Frustlabs.kubedaily.com%2F)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Frustlabs.kubedaily.com%2F) <br>
+
 ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/Labs.png)
 
 The Ultimate Workshop Track Specially Designed For You - Select Learning Paths 
