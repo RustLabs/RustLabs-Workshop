@@ -1,3 +1,11 @@
+---
+layout: default
+title: Assignment and Compound Assignment Operators
+parent: Rust for Beginners
+nav_order: 30
+---
+
+
 # Assignment and Compound Assignment Operators
 
 - Assignment Operator 
