@@ -1,3 +1,11 @@
+---
+layout: default
+title:  If Expression
+parent: Rust for Beginners
+nav_order: 37
+---
+
+
 # If Expression
 
 There can be multiple conditional constructs using an if statement.
@@ -10,7 +18,7 @@ There can be multiple conditional constructs using an if statement.
 
    -  Nested if expression
 
-    -  Shorthand if expression
+   -  Shorthand if expression
 
 Let’s discuss each one of them in detail:-
 
@@ -90,9 +98,88 @@ If there are multiple conditions to be checked, then if..else if..else construct
 
 Syntax 
 The general syntax is:
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/if-else-if-else-condi.png)
+
+# llustration 
+The following flow chart explains the concept of an if..else if..else expression:
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/if-else-if-else-flow.png)
+
+
+```
+fn main() {
+      //define a variable 
+      let learn_language="Rust";
+      // if..elseif..else construct 
+      if learn_language == "Rust" { 
+         println!("You are learning Rust language!");
+      }
+      else if learn_language == "Java" { 
+         println!("You are learning Java language!");
+      }
+      else {
+         println!("You are learning some other language!");
+      } 
+}
 
 
 
+```
+Output
+```
+You are learning Rust language!
+
+```
+
+# Nested if Expression 
+An if expression inside the body of another if expression is referred to as a nested if expression.
+- Syntax 
+An if construct is enclosed within an if construct.
+The general syntax is:
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/nested-if.png)
+
+Note: The nested if expression can also be written with a AND expression in an if.
+```
+if condition1 && condition2 
+{
+ //statement
+}
+
+```
+This is true only if the second if statement is the only thing inside the first if.
+
+# Illustration
+
+The following flow chart explains the concept of a nested if statement .
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/nested-if-flow.png)
 
 
+Note: There can be as many levels of nesting as you want.
+
+```
+fn main() {
+    //define a variable 
+    let learn_language1 = "Rust";
+    let learn_language2 = "Java";
+    // outer if statement
+    if learn_language1 == "Rust" {  // inner if statement
+        if learn_language2 == "Java"{
+              println!("You are learning Rust and Java language!");
+        }
+    }
+    else {
+      println!("You are learning some other language!");
+    } 
+}
+
+
+```
+
+output:-
+
+```
+You are learning Rust and Java language!
+
+```
 
