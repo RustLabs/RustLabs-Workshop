@@ -2,7 +2,7 @@
 layout: default
 title: Challenge - Calculate (a + b)^3
 parent: Rust for Beginners
-nav_order: 33
+nav_order: 34
 ---
 
 
