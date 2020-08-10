@@ -183,3 +183,160 @@ You are learning Rust and Java language!
 
 ```
 
+# Shorthand if 
+Instead of writing a lengthy if-else construct, we can use a shorthand if.
+
+Syntax 
+The general syntax is:
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/short-if.png)
+
+ Note: This is similar to a ternary operator in languages like C and C++.
+ 
+ ```
+ fn main() {
+    //define a variable  
+    let learn_language = "Rust";
+    // short hand construct
+    let res= if learn_language == "Rust" {"You are learning Rust language!"} else {"You are learning some other language!"};
+    println!("{}", res);
+}
+ 
+ 
+ ```
+  Note: Expressions can return a value, unlike statements. Recall that the semicolon turns any expression into a statement. It throws away its value and returns a unit () instead.
+
+```
+fn main() {
+    let x = "Rust";
+
+    let y: bool = if x == "Rust" { true } else { false };
+
+    // let z: bool = if x == "Rust" { true; } else { false; };
+
+    println!("x:{}", x);
+    println!("y:{}", y);
+
+}
+
+```
+Note: Uncommenting line 6 in the above code gives an error ❌ since we are trying to convert an expression to a statement and hence not returning a value.
+
+# Quiz 
+
+Test your understanding of if expressions in Rust.
+
+1. What is the output of the following code?
+
+```
+fn main() {
+   let age=23; 
+   if age >=21{ 
+      println!("Age is greater than 21");
+   }
+    else if age <21{
+       println!("Age is less than 21");
+    }
+    println!("Value Printed");
+}
+
+```
+A) Age is greater than 21 <br>
+   Value Printed
+   
+B) Age is less than 21 <br>
+   Value Printed
+   
+C) Age is greater than 21 <br>
+D) Age is less than 21 <br>
+
+
+
+2. Which If block is executed? <br>
+
+```
+fn main() {
+   let age=23; 
+   let play=true; 
+   let activity="Tennis" ;
+   if age >=21 && play==false && activity=="Tennis"{ 
+     println!("Age is greater than 21");
+     println!("You are not allowed to play");
+     println!("The sport is {}",activity);
+   }
+   else if  age >=21 && play==true && activity=="Tennis"{ 
+     println!("Age is greater than 21");
+     println!("You are allowed to play");
+     println!("The sport is {}",activity);
+   }
+   else if age <21 && play==false && activity=="Tennis"{
+     println!("Age is less than 21");
+     println!("You are allowed to play");
+     println!("The sport is {}",activity);
+   }
+   else {
+     println!("Value Printed");
+   }
+}
+
+
+```
+
+A) First <br>
+B) Second <br>
+C) Third <br>
+
+
+3. What is the output of the following code? <br>
+
+```
+fn main() {
+  let age = 23; 
+  let play = true; 
+  let activity="Baseball" ;
+  if age >= 21 && play==true || activity == "Tennis" { 
+    println!("Age is greater than 21");
+    println!("You are allowed to play");
+    println!("The sport is {}",activity);
+  }
+  else if  age >= 21 && play == true && activity == "Tennis"{ 
+    println!("Age is greater than 21");
+    println!("You are allowed to play");
+    println!("The sport is {}",activity);
+  }
+  else if age <21 && play == false && activity == "Tennis"{
+    println!("Age is less than 21");
+    println!("You are allowed to play");
+    println!("The sport is {}",activity);
+  }
+  else{
+    println!("Value Printed");
+  }
+ }
+
+```
+
+A) Age is greater than 21 <br>
+You are allowed to play <br>
+The sport is Baseball <br>
+
+B)Age is greater than 21 <br>
+You are allowed to play <br>
+The sport is Tennis <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
