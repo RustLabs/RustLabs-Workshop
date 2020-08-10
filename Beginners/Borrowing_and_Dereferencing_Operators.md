@@ -124,7 +124,9 @@ a) shared borrow <br>
 b) mutable borrow <br>
 
 2. What is the output of the following code?  <br>
+
 ```
+
 fn main() {
       let a = &10;
       let b = &mut 9;
