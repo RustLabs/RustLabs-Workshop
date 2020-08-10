@@ -2,7 +2,7 @@
 layout: default
 title: Solution - Calculate (a + b)^3
 parent: Rust for Beginners
-nav_order: 34
+nav_order: 35
 ---
 
 # Solution : Calculate (a + b)^3
