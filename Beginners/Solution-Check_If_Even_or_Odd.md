@@ -8,6 +8,8 @@ nav_order: 42
 # Solution 1: Check If Even or Odd
 
 - Solution:
+
+
 ```
 fn test(_a:i32) { 
     // check divisibility by 2
@@ -20,7 +22,9 @@ fn test(_a:i32) {
 }
 
 ```
+
 Output
+
 ```
 Number 4 is even
 Number 9 is odd
