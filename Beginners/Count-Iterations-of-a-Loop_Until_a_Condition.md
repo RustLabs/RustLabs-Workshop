@@ -2,7 +2,7 @@
 layout: default
 title: Challenge 2 - Count Iterations of a Loop Until a Condition
 parent: Rust for Beginners
-nav_order: 53
+nav_order: 54
 ---
 
 
