@@ -16,27 +16,29 @@ nav_order: 54
    - Repeatedly decrease the value of the variable `x` by 3 each time, as long as `x` is greater than or equal to 0.
    - Print the number of times the iteration runs.
 
-- Input 
+Input 
+
 ```
 integer
 
 ```
-- Output 
+Output 
 
 ```
-- iteration count
+iteration count
 
 ```
-- Sample Input 
+Sample Input 
 
 ```
 21
 ```
-- Sample Ouput 
+Sample Ouput 
 
 ```
    8
 ```
+
 # Coding Exercise 
 
 ```
@@ -44,6 +46,7 @@ fn test(mut x:i32) {
     // Write code here!
 }
 ```
+
 Good luck! 🤞
 
 
