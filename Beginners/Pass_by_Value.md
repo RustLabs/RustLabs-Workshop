@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Functions With Parameters
+title: Pass by Value
 parent: Rust for Beginners
 nav_order: 60
 ---
