@@ -62,7 +62,7 @@ The value `n` is given to you for which the right-angled triangle needs to be pr
     - The output is a right-angled triangle.
     
     
-    | i 	| j 	| output 	|
+| i | j 	| output 	|
 |-	|-	|-	|
 | <br><br>1 	|  1<br>  	| &<br>&&<br>&&&<br>&&&&<br>&&&&&<br><br>  	|
 | 2 	|  1<br> 2 	| && 	|
