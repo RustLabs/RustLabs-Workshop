@@ -62,6 +62,39 @@ The function `my_func()` is defined from line `2` to line `5`.
   - On line `7` and line `8`, two `variables value_1` and `value_2` are defined.
   - On line `10`, the function is invoked while passing the value of the `variable value_1 `as the first argument and that of `value_2` as the second.
   
+# Types of Arguments 
+- Arguments can be passed to a function in two different ways:
+   - Pass by value
+   - Pass by reference
+
+# Quiz 
+
+Test your understanding of parameterized functions in Rust!
+
+1. What is the output of the following code?
+
+```
+fn my_func(param1:i32, param2:i32) {
+  println!("The first value passed inside function : {}",  param1);
+}
+fn main() {
+  let value1 = 1;
+  let value2 = 2;
+  my_func(value1, value2);
+}
+
+```
+A) The first value passed inside function : 1 <br>
+The second value passed inside function : 2 <br>
+B)The first value passed inside function : 1 <br>
+
+
+
+
+
+  
+  
+  
   
     
     
