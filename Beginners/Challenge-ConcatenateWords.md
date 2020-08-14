@@ -32,6 +32,7 @@ The task requires you to find all words starting with a “c” in a string pass
 comprehensive course concentration content course
 
 ```
+
 # Coding Exercise 
 
 ```
