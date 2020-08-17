@@ -53,6 +53,7 @@ Output
 ```
 What is the signal value? - Red
 Do we have to stop at signal? - true
+
 ```
 
 
@@ -61,6 +62,7 @@ Do we have to stop at signal? - true
 Test your understanding of methods of enum in Rust.
 
 1. What is the output of the following code?
+
 ```
 #![allow(dead_code)]
 #[derive(Debug)]
@@ -81,18 +83,18 @@ fn main(){
   println!("Do we have to stop at signal? - {}", action.is_stop());
 }
 
-
 ```
+
 A)
+
 ```
 What is the signal value? - Yellow
-
 Do we have to stop at signal? - false
 ```
 B)
+
 ```
 What is the signal value? - Red
-
 Do we have to stop at signal? - true
 ```
 
