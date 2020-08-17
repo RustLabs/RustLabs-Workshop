@@ -1,3 +1,10 @@
+---
+layout: default
+title:  What Is Option? 
+parent: Rust for Beginners
+nav_order: 98
+---
+
 # What Is Option? 
 
 Option is a built-in enum in the Rust standard library. It has two variants Some and None.
