@@ -7,3 +7,4 @@ has_toc: true
 permalink: 
 ---
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/rustlogo.png)
