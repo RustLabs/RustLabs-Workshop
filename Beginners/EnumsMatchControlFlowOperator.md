@@ -1,9 +1,17 @@
+---
+layout: default
+title: Enums and Match Control Flow Operator
+parent: Rust for Beginners
+nav_order: 96
+---
+
 # Enums and Match Control Flow Operator
 The match statement can be used to compare values within an enum. The match statement can be written within a main function or any other user-defined function.
 
 # Syntax 
 The match statement can be written within a function be it main or any other user-defined function.
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/match-enum.png)
 # Example 
 The example below makes use of a match statement within a `print_direction` function.
 
