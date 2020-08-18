@@ -1,3 +1,11 @@
+---
+layout: default
+title:  Traits
+parent: Rust for Beginners
+nav_order: 102
+---
+
+
 # Traits
 
 When there are multiple different types behind a single interface, the interface can tell which concrete type to access. 
@@ -8,6 +16,11 @@ This is where the traits come in handy.
 Traits are used to define a standard set of behavior for multiple structs.
 
 They are like interfaces in Java.
+
+Suppose you want to calculate area for different shapes. We know that the area is calculated differently for every shape. The best solution is to make a trait and define an abstract method in it and implement that method within every struct impl construct.
+
+
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-example.png)
 
 # Types of Methods in Traits 
 
@@ -26,15 +39,16 @@ There can be two types of methods in traits
 
 Traits are written with a trait keyword.
 
-Naming Convention
-Name of the trait is written in CamelCase
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-syntax.png)
 
-
+- Naming Convention
+    Name of the trait is written in CamelCase
 
 # Implement a trait
 
 Traits can be implemented for any structure.
 
+![](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-syntax-impl.png)
 
 Example 
 
@@ -112,9 +126,30 @@ impl Area for Rectangle {
 }
 
 
-
+```
+output 
 
 ```
+Area of Circle: 12.52
+Area of Rectangle:4
+
+```
+# Quiz 
+Test your understanding of traits in Rust.
+
+1. Which of the following trait method allows you to write body of the method? <br>
+A) abstract <br>
+B) concrete <br>
+
+2. Traits are like interfaces in other object oriented languages. <br>
+A) True <br>
+B) False <br>
+
+
+
+
+
+
 
 
 
