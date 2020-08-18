@@ -26,13 +26,10 @@ Suppose you want to calculate area for different shapes. We know that the area i
 
 There can be two types of methods in traits
 
-    - Concrete Method
-
-        - The method that has a body meaning that implementation of the method is done within the method.
-
-    - Abstract Method
-
-       - The method that does not have a body meaning that implementation of the method is done by each struct in its own `impl` construct.
+- Concrete Method
+   - The method that has a body meaning that implementation of the method is done within the method.
+- Abstract Method
+   - The method that does not have a body meaning that implementation of the method is done by each struct in its own `impl` construct.
        
        
 # Declare a Trait 
