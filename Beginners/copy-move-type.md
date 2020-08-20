@@ -168,13 +168,13 @@ a:Rusty , b:Rust
 
 Test your understanding of copied and moved types in Rust!
 
-1. Which of the following are copied types?
+1. Which of the following are copied types? <br>
 A) Array <br>
 B) f32 <br>
 C) i32 <br> 
 D) Vector <br>
 
-2. Which of the following are moved types?
+2. Which of the following are moved types? <br>
 A) Array <br>
 B) i32 <br>
 C) String <br>
