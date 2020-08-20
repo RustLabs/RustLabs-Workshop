@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ownership
+title: Copy Type and Moved Type
 parent: Rust for Beginners
 nav_order: 114
 ---
