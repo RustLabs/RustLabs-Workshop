@@ -36,9 +36,9 @@ fn main() {
 
 ```
 
-- The array arr declaration on line 4 declares an array with elements 1,2,3,41,2,3,41,2,3,4.
-- The array arr1 declaration on line 6 implicitly determines the data type (integer) from the value 000 and 444 is the size of the array. 
-    So, this becomes an array consisting of 444 zeros.
+- The array arr declaration on line 4 declares an array with elements 1,2,3,4.
+- The array arr1 declaration on line 6 implicitly determines the data type (integer) from the value 0 and 4, is the size of the array. 
+    So, this becomes an array consisting of 4 zeros.
     
  # Access an Element of an Array 
 
