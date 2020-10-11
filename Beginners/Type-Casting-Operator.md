@@ -62,7 +62,7 @@ fn main() {
 ```
 fn main() {
     let a = 15;
-    let b = (a as f32) / 3.0; //7.5
+    let b = (a as f32) / 3.0; // 5
     println!("a:{}",a);
     println!("b:{}",b);
 }
