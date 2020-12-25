@@ -19,6 +19,13 @@ The Ultimate Workshop Track Specially Designed For You - Select Learning Paths
 
 Rustlabs is an independent community project founded by [Sangam Biradar](https://twitter.com/BiradarSangam/), Docker Community Leader,Traefik Ambassdor,Okteto Community lead ,India .Mostly Works on Cloud_Native . Rustlabs which is now growing community and He is frequently mentoring and educating free of cost ! 
 
+# Rustlabs Episodes Series 
+
+| title                                                                                 | videos  |
+|---------------------------------------------------------------------------------------|---------|
+| Episode 01 - Getting Started With Rust - Part 1  | [YouTube](https://www.youtube.com/watch?v=QrIvsftiVnQ)  |
+
+email if you want to be part of any episode :- kubedaily@gmail.com 
 
 
 # Rust Developer Roadmap 2020
