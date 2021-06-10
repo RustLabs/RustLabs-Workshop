@@ -1,0 +1,61 @@
+I",<h1 id="solution---find-if-the-day-is-a-weekend">Solution - Find If the Day Is a Weekend</h1>
+
+<p>Solution:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#![allow(dead_code)]
+
+#[derive(Debug)]
+
+// declare an enum
+
+enum Days{
+
+    Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+
+}
+
+//implement Days methods
+
+impl Days{
+
+    // if the day is a weekend
+
+    fn is_weekend(&amp;self)-&gt;i32{
+
+      match self{
+
+        &amp;Days::Saturday=&gt;return 1,
+
+        &amp;Days::Sunday=&gt;return 1,
+
+        _=&gt;return 0
+
+      }
+
+    }
+
+}
+
+fn main() {
+
+    let mut check_day = Days::Saturday;
+
+    println!("Is Saturday a weekend ? : {}", check_day.is_weekend());
+
+    check_day = Days::Monday;
+
+    println!("Is Monday a weekend ? : {}", check_day.is_weekend());
+
+}
+
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Is Saturday a weekend ? : 1
+Is Monday a weekend ? : 0
+
+</code></pre></div></div>
+
+:ET

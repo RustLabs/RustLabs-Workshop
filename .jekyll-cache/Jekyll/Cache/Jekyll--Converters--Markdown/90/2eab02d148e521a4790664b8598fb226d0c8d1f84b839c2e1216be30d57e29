@@ -1,0 +1,96 @@
+I"P<h1 id="functions-with-parameters">Functions With Parameters</h1>
+<p>In the previous example, a function was defined with nothing inside the round brackets. But certain functions require some information on which they should operate. For instance, a function that is expected to compute the square of a number 
+needs to be provided with the number itself. That’s what a parameter is.</p>
+
+<h1 id="what-are-the-parameters">What Are the Parameters?</h1>
+<p>Variable or values that go in the function definition are parameters.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/fn_parm.png" alt="" /></p>
+
+<h1 id="what-are-arguments">What Are Arguments?</h1>
+<p>Variables or values that go in their place in the function invocation are known as arguments.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/fn_arg.png" alt="Invoking a function with arguments" /></p>
+
+<h1 id="example">Example</h1>
+
+<p>To understand the above concept, let’s look at the example below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//function definition
+fn my_func(param_1:i32, param_2:i32) {
+  println!("The first value passed inside function : {}", param_1);
+  println!("The second value passed inside function : {}", param_2);
+}
+fn main() {
+  let value_1 = 1;
+  let value_2 = 2;
+  //calling the function
+  my_func( value_1, value_2 );
+  println!("Function ended");
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The first value passed inside function : 1
+The second value passed inside function : 2
+Function ended
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<p>The above program comprises two functions, the user defined function my_func() and the driver function main() where the function is being called.</p>
+
+<ul>
+  <li>User defined function</li>
+</ul>
+
+<p>The function <code class="language-plaintext highlighter-rouge">my_func()</code> is defined from line <code class="language-plaintext highlighter-rouge">2</code> to line <code class="language-plaintext highlighter-rouge">5</code>.</p>
+<ul>
+  <li>Two parameters <code class="language-plaintext highlighter-rouge">param_1</code> and <code class="language-plaintext highlighter-rouge">param_2 </code>are passed to the function.</li>
+  <li>
+    <p>The values of passed parameters are printed on line <code class="language-plaintext highlighter-rouge">3</code> and line <code class="language-plaintext highlighter-rouge">4</code>.</p>
+  </li>
+  <li>Driver function</li>
+  <li>The driver <code class="language-plaintext highlighter-rouge">function main()</code> is defined from line <code class="language-plaintext highlighter-rouge">6</code> to line <code class="language-plaintext highlighter-rouge">12</code>.
+    <ul>
+      <li>On line <code class="language-plaintext highlighter-rouge">7</code> and line <code class="language-plaintext highlighter-rouge">8</code>, two <code class="language-plaintext highlighter-rouge">variables value_1</code> and <code class="language-plaintext highlighter-rouge">value_2</code> are defined.</li>
+      <li>On line <code class="language-plaintext highlighter-rouge">10</code>, the function is invoked while passing the value of the <code class="language-plaintext highlighter-rouge">variable value_1 </code>as the first argument and that of <code class="language-plaintext highlighter-rouge">value_2</code> as the second.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="types-of-arguments">Types of Arguments</h1>
+<ul>
+  <li>Arguments can be passed to a function in two different ways:
+    <ul>
+      <li>Pass by value</li>
+      <li>Pass by reference</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of parameterized functions in Rust!</p>
+
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn my_func(param1:i32, param2:i32) {
+  println!("The first value passed inside function : {}",  param1);
+}
+fn main() {
+  let value1 = 1;
+  let value2 = 2;
+  my_func(value1, value2);
+}
+
+</code></pre></div></div>
+<p>A) The first value passed inside function : 1 <br />
+The second value passed inside function : 2 <br />
+B)The first value passed inside function : 1 <br /></p>
+
+:ET

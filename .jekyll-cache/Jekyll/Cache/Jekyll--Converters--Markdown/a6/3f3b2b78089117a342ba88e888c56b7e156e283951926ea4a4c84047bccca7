@@ -1,0 +1,48 @@
+I"P<h1 id="challenge-3-find-nth-fibonacci-number">Challenge 3: Find nth Fibonacci Number</h1>
+
+<ul>
+  <li>Problem Statement</li>
+</ul>
+
+<p>In this exercise, you have to write a recursive function fibonacci that takes a positive integer number n as a parameter 
+and returns the nth Fibonacci term in that range.</p>
+
+<ul>
+  <li>The Fibonacci Sequence is the series of numbers in which the next term is found by adding the two previous terms:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+</code></pre></div></div>
+<p>Here , the number 1 is the first term, 1 is the second term, 2 is the third term and so on…</p>
+
+<p>Input</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   an integer n
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   nth fibonacci term
+</code></pre></div></div>
+<p>Sample Input</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 7
+</code></pre></div></div>
+<p>Sample Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 13
+</code></pre></div></div>
+
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn fibonacci(term: i32) -&gt; i32 {
+
+    // Write code here
+
+    -1
+
+}
+
+
+</code></pre></div></div>
+
+<p>Good luck! 🤞</p>
+:ET

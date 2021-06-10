@@ -1,0 +1,77 @@
+I"h<h1 id="function-with-multiple-return-values">Function With Multiple Return Values</h1>
+
+<ul>
+  <li>
+    <p>Returning Multiple Values 
+In system programming languages like C++ and C, it is only possible to return a single value or a pointer to an array from a function. However, Rust allows you to return multiple values using a tuple.</p>
+  </li>
+  <li>
+    <p>Syntax 
+The function definition for returning multiple values:
+<img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/multi-return-val.png" alt="" /></p>
+  </li>
+</ul>
+
+<p>The way to return tuple from a function is to just write the tuple:</p>
+
+<p>Defining a function with returning a tuple</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/tuple-return-val.png" alt="" /></p>
+
+<h1 id="example">Example</h1>
+
+<p>The following example makes a function <code class="language-plaintext highlighter-rouge">calculate_area_perimeter() </code>that takes a <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>( length and width of a rectangle) as a parameter to 
+the function and returns a tuple <code class="language-plaintext highlighter-rouge">(area, perimeter)</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// driver function
+fn main() {
+    let length = 4;
+    let width = 3;
+    println!("Rectangle lenth:{}", length);
+    println!("Rectangle width:{}", width);
+    let (area, perimeter) = calculate_area_perimeter(length, width);
+    println!("Area: {}, Perimeter: {}", area, perimeter);
+}
+// calculate area and perimeter
+fn calculate_area_perimeter(x: i32, y: i32) -&gt; (i32, i32) {
+    // calculate the area and perimeter of rectangle
+    let area = x * y;
+    let perimeter = 2 * (x + y);
+    // return the area and perimeter of rectangle
+    (area, perimeter)
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rectangle lenth:4
+Rectangle width:3
+Area: 12, Perimeter: 14
+
+</code></pre></div></div>
+<h1 id="explanation">Explanation</h1>
+
+<p>The above program comprises two functions, the user defined function <code class="language-plaintext highlighter-rouge">calculate_area_perimeter()</code> and the driver function <code class="language-plaintext highlighter-rouge">main()</code> where the function is being called.</p>
+
+<ul>
+  <li>User defined function 
+The function <code class="language-plaintext highlighter-rouge">calculate_area_perimeter()</code> is defined from line 11 to line 17.
+    <ul>
+      <li>On <code class="language-plaintext highlighter-rouge">line 13</code>, the area of the rectangle is calculated by multiplying parameters<code class="language-plaintext highlighter-rouge"> x</code> and<code class="language-plaintext highlighter-rouge"> y</code> and the result is saved in area.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 14</code>, the perimeter of the rectangle is calculated by adding parameters<code class="language-plaintext highlighter-rouge"> x</code> and<code class="language-plaintext highlighter-rouge"> y </code>and then multiplying the result with<code class="language-plaintext highlighter-rouge"> 2</code> and then, the final result is saved in perimeter.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 16</code>, a tuple <code class="language-plaintext highlighter-rouge">(area, perimeter)</code> is returned.</li>
+    </ul>
+  </li>
+  <li>Driver function 
+The driver function <code class="language-plaintext highlighter-rouge">main()</code> is defined from line <code class="language-plaintext highlighter-rouge">2</code> to line <code class="language-plaintext highlighter-rouge">9</code>
+    <ul>
+      <li>On <code class="language-plaintext highlighter-rouge">line 3</code>, a variable length is initialized with the value <code class="language-plaintext highlighter-rouge">4</code>.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 4</code>, a variable width is initialized with the value 3.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 5</code> and <code class="language-plaintext highlighter-rouge">6</code>, the value of length and width is displayed respectively.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 7</code>, the function <code class="language-plaintext highlighter-rouge">calculate_area_perimeter()</code> is invoked which takes length and width as an argument to the function and return value of 
+the function is saved in a tuple.</li>
+    </ul>
+  </li>
+</ul>
+
+:ET

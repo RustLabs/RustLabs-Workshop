@@ -1,0 +1,27 @@
+I"<p>繁體中文。</p>
+
+<!--more-->
+
+<style>
+  .page__header .header__brand path {
+    fill: rgba(255, 255, 255, .95);
+  }
+</style>
+
+<p><em>_config.yml</em> or front matter:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s">zh-Hant</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">zh-TW</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">zh-HK</span>
+</code></pre></div></div>
+
+<div style="writing-mode: vertical-rl;">
+  <blockquote>
+    <p>關關雎鳩，在河之洲。</p>
+
+    <p>窈窕淑女，君子好逑。</p>
+
+    <p>——《詩經·國風·周南·關雎》</p>
+  </blockquote>
+</div>
+:ET

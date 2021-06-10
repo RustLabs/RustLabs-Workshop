@@ -1,0 +1,94 @@
+I"�<p>the Hello World program in Rust.</p>
+
+<p>Rust code is always put in a file with .rs extension.</p>
+
+<h1 id="hello-world-program">Hello World Program</h1>
+
+<p>Below is the source code for a traditional Hello World program.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+    println!("Hello World!");
+}
+
+</code></pre></div></div>
+<h1 id="anatomy-of-a-hello-world-program">Anatomy of a Hello World Program</h1>
+
+<p>Let’s look at the anatomy of a Hello World program. We’ll start from the very first line and go step by step.</p>
+
+<p>Line 1: The main function is the beginning of every Rust program</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/fn_main.png" alt="" /></p>
+
+<p>This line declares a function named main that takes no arguments and returns nothing. If arguments were present they would have been passed within the round brackets ( ).</p>
+
+<p>The function body starts with the opening curly brace {.</p>
+
+<p>Line 2: The second line prints the Hello World to the screen.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/helloworld.png" alt="" /></p>
+
+<p>Here <code class="language-plaintext highlighter-rouge">println!()</code> macro takes the string <code class="language-plaintext highlighter-rouge">“Hello World” </code>and displays it on the screen. This line ends with a semicolon<code class="language-plaintext highlighter-rouge">(;)</code> which indicates that the expression is over and the next one is ready to begin. The function body ends with a closing curly brace <code class="language-plaintext highlighter-rouge">}</code>.</p>
+
+<p>📝 Ending an expression with a semicolon is just a convention. If a semicolon is added at the end of an expression, it becomes a statement.
+📝 Anything declared within pair of braces<code class="language-plaintext highlighter-rouge"> {} </code>denotes a block of code.</p>
+
+<h1 id="what-is-a-macro">What is a macro?</h1>
+
+<p>A macro is an expression that has
+an exclamation mark (!) before the parenthesis () , i.e.,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                             macro_name ! ( );
+</code></pre></div></div>
+
+<h1 id="what-are-macros-used-for">What are macros used for?</h1>
+
+<p>They are used in metaprogramming, i.e., code that writes code. They look like functions in other system programming languages like C and C++, but instead of generating a function call like functions, they are expanded into source code that gets compiled with the rest of the program. In this way, they provide more run-time features.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/metaprogram.png" alt="" /></p>
+
+<h1 id="types-of-macros">Types of Macros</h1>
+
+<p>Rust provides us with some built-in macros, like the println!() above, and users can define their own macros as well.</p>
+
+<p>For now, the information above will suffice, but more details on macros will be covered in the advanced track</p>
+
+<h1 id="quiz">Quiz</h1>
+
+<ol>
+  <li>What is the key word for declaring a function?</li>
+</ol>
+
+<ul>
+  <li>
+    <p>fun</p>
+  </li>
+  <li>
+    <p>function</p>
+  </li>
+  <li>
+    <p>func</p>
+  </li>
+  <li>
+    <p>fn</p>
+  </li>
+</ul>
+
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn main() {
+    println!("Hello World!")
+    println!("Hello");
+}
+
+</code></pre></div></div>
+
+<p>a) Hello World!
+   Hello</p>
+
+<p>b) error</p>
+
+<p>hint :- A semicolon can be omitted at the end of last statement only</p>
+
+:ET

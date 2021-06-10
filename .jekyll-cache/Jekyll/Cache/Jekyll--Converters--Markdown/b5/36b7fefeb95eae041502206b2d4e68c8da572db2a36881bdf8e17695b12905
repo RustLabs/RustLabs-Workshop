@@ -1,0 +1,126 @@
+I"�<h1 id="character-and-string">Character and String</h1>
+
+<ul>
+  <li>Character</li>
+</ul>
+
+<p>The variable is used to store a single character value, such as a single digit or a single alphabet. The value assigned to a char variable is enclosed in a single quote(‘’) .</p>
+
+<p>Note: Unlike some other languages, a character in Rust takes up 4 bytes rather than a single byte. It does so because it can store a lot more than just an ASCII value like emojis, Korean, Chinese, 
+and Japanese characters.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/my_char.png" alt="" /></p>
+
+<h1 id="example">Example</h1>
+
+<p>The code below defines a character both explicitly and implicitly:</p>
+
+<ul>
+  <li>Explicit Definition</li>
+</ul>
+
+<p>The following code explicitly defines the variable using the char keyword:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+    // explicitly define 
+    let char_1:char = 'e';
+    println!("character1: {}", char_1); 
+}
+
+</code></pre></div></div>
+
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>character1: e
+</code></pre></div></div>
+
+<p>Implicit Definition</p>
+
+<p>The following code implicitly defines the character type of the variable by assigning the single value enclosed within single quotes to them.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() { 
+    // implicitly define
+    let char_2 = 'a';
+    let char_3 = 'b';
+    println!("character2: {}", char_2);
+    println!("character3: {}", char_3);
+}
+
+</code></pre></div></div>
+
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>character2: a
+character3: b
+
+</code></pre></div></div>
+
+<h1 id="string">String</h1>
+
+<p>A string is any sequence of characters enclosed within double quotes (“ “).</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/my_char_string.png" alt="" /></p>
+
+<h1 id="example-1">Example</h1>
+
+<p>The code below defines a string both explicitly and implicitly:</p>
+
+<ul>
+  <li>Explicit Definition</li>
+</ul>
+
+<p>The following code explicitly defines the variable using the <code class="language-plaintext highlighter-rouge">&amp;str</code> keyword:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+    // explicitly define 
+    let str_1:&amp;str = "Rust Programming";
+    println!("String 1: {}", str_1); 
+}
+
+</code></pre></div></div>
+
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>String 1: Rust Programming
+
+</code></pre></div></div>
+
+<h1 id="implicit-definition">Implicit Definition</h1>
+
+<p>The following code implicitly defines the string type of the variable by assigning the single value enclosed within double quotes to them.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn main() { 
+    // implicitly define
+    let str_2 = "Rust Programming";
+    println!("String 2: {}", str_2);
+}
+
+
+</code></pre></div></div>
+<p>output:-</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>String 2: Rust Programming
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<ol>
+  <li>What is the output of the following code? <br /></li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+let value:str = "Rust Programming";
+println!("{}", value);
+
+</code></pre></div></div>
+<p>a) Rust Programming <b> 
+b) Error <br /></b></p>
+
+<ol>
+  <li>What is the valid syntax for defining a character explicitly? <br /></li>
+</ol>
+
+<p>a) <code class="language-plaintext highlighter-rouge">let char1 : char = 'e';</code>    <br /> 
+b) <code class="language-plaintext highlighter-rouge">let char1: character = 'e';</code>  <br /></p>
+
+:ET

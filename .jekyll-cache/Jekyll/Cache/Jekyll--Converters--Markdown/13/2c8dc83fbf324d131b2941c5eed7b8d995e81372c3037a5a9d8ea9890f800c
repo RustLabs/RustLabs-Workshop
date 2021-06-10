@@ -1,0 +1,80 @@
+I"<h1 id="enums-and-structures">Enums and Structures</h1>
+
+<p>Structures can have an item that is of type <code class="language-plaintext highlighter-rouge">enum</code>.</p>
+
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>The following illustration explains the syntax:</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/enum-struct.png" alt="" /></p>
+
+<ul>
+  <li>Example</li>
+</ul>
+
+<p>The following example creates an enum <code class="language-plaintext highlighter-rouge">KnightMove</code> and a <code class="language-plaintext highlighter-rouge">struct</code> Player.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// make this `enum` printable with `fmt::Debug`.
+
+#[derive(Debug)]
+
+//define an enum
+
+enum KnightMove{
+
+   Horizontal, Vertical
+
+}
+
+#[derive(Debug)]
+
+// make this `struct` print values of type `enum`  with `fmt::Debug`.
+
+struct Player {
+
+   color:String,
+
+   knight:KnightMove
+
+}
+
+fn main() {
+
+      // instance 1
+
+      let p1 = Player{
+
+      color:String::from("black"),
+
+      knight:KnightMove::Horizontal
+
+   };
+
+      // instance 2
+
+      let p2 = Player{
+
+      color:String::from("white"),
+
+      knight:KnightMove::Vertical
+
+   };
+
+   println!("{:?}", p1);
+
+   println!("{:?}", p2);
+
+}
+
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Player { color: "black", knight: Horizontal }
+Player { color: "white", knight: Vertical }
+
+</code></pre></div></div>
+:ET

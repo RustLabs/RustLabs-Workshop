@@ -1,0 +1,24 @@
+I"ã<h1 id="solution">Solution:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test() {
+    // define an array
+    let arr:[i32;6] = [0, 2, 4, 6, 8, 10]; 
+    // print the values of array
+    print!("{},{},{},{},{},{}",arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
+}
+
+
+</code></pre></div></div>
+<p>output:-</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0,2,4,6,8,10
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+<ul>
+  <li>On line 3, an array arr of type i32 and size 6 is defined with values 0, 2, 4, 6, 8, 10.</li>
+  <li>On line 5, print the value of the arr elements using the subscript notation <code class="language-plaintext highlighter-rouge">[]</code> using placeholder <code class="language-plaintext highlighter-rouge">{}</code> for each value within the <code class="language-plaintext highlighter-rouge">print!()</code> macro.</li>
+</ul>
+
+:ET

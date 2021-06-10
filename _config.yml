@@ -43,9 +43,9 @@ author:
     Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
   email     : kitian616@outlook.com
   facebook  :
-  twitter   : kitian616
-  weibo     : 234695683
-  googleplus: 101827554735084402671
+  twitter   : kubedaily
+  weibo     : 
+  googleplus: 
   telegram  :
   medium    :
   zhihu     :
@@ -176,7 +176,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : UA-71907556-1
+    tracking_id : 
     anonymize_ip: false
 
 

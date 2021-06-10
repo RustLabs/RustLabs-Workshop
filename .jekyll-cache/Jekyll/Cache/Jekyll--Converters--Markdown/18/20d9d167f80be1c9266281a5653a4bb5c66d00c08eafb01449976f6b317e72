@@ -1,0 +1,142 @@
+I"<h1 id="core-methods-of-string-objects">Core Methods of String Objects</h1>
+
+<p>Some of the core methods are discussed in this lesson. You can find a list of all the String methods in Rust documentation of Strings.</p>
+
+<h1 id="capacity-in-bytes">Capacity in Bytes</h1>
+
+<p>The capacity gives the number of bytes allocated to the String, unlike len which gives the number of bytes taken by the String object. 
+To get the capacity of a variable in bytes, use the built-in function <code class="language-plaintext highlighter-rouge">capacity()</code>.</p>
+
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>The general syntax is:</p>
+
+<p><code class="language-plaintext highlighter-rouge">str.capacity()</code></p>
+
+<p>Here str is the string whose capacity is to be found.</p>
+
+<p>Note: The length of String will always be less than or equal to the capacity.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // define a growable string variable
+  let course = String::from("Rust");
+  println!("This is a beginner course in {}.", course);
+  //capacity in bytes
+  println!("Capacity: {}.", course.capacity());
+}
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a beginner course in Rust.
+Capacity: 4.
+
+</code></pre></div></div>
+
+<h1 id="finding-a-substring">Finding a Substring</h1>
+
+<p>To find if one string contains another string, use the contains() built-in function.</p>
+<ul>
+  <li>Syntax 
+The general syntax is :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str.contains("sub_str")
+</code></pre></div></div>
+<p>Here str is the original string and “sub_str” is a substring which is to be found in a string.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // define a growable string variable
+  let str = String::from("Rust Programming"); 
+  let sub_str = String::from("Rust"); 
+  println!("This is a beginner course in {}.", str);
+  // find if string contains a substring
+  println!("{} is a substring of {}: {}.", sub_str, str, str.contains("Rust"));
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a beginner course in Rust Programming.
+Rust is a substring of Rust Programming: true.
+</code></pre></div></div>
+
+<h1 id="replace-a-substring">Replace a Substring</h1>
+
+<p>To replace all occurrences of one substring within a String object with another String, use the replace() built-in function.</p>
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>The general syntax is :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str.replace(replace_from, replace_to)
+</code></pre></div></div>
+<p>Here str is the original string, <code class="language-plaintext highlighter-rouge">replace_from</code> is the value which is to be replaced in the string str and replace_to is the value the string is converted to.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // define a growable string variable
+  let str = String::from("Rust Programming"); 
+  let replace_from = "Programming";
+  let replace_to = "Language"; 
+  // find if string contains a substring
+  let result = str.replace(replace_from, replace_to);
+  println!("{} now becomes {}.", str, result);
+}
+
+
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Rust Programming now becomes Rust Language.
+
+</code></pre></div></div>
+
+<h1 id="trim-a-string">Trim a String</h1>
+
+<p>To trim a string use the function trim(). It is used to remove leading and trailing whitespaces in a string.</p>
+<ul>
+  <li>Syntax 
+The general syntax is :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>string.trim()
+</code></pre></div>    </div>
+    <p>Note: The trim function does not remove the space between the string.</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+   let string = "   Rust     Programming     ".to_string();
+   let trim_string = string.trim(); 
+   // get characters at 5,6,7,8,9,10 and 11 indexes
+   println!("Trimmed_string : {}", trim_string);
+}
+
+</code></pre></div></div>
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Trimmed_string : Rust     Programming
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of core methods of Strings in Rust!</p>
+
+<ol>
+  <li>
+    <p>Common method of string object and string literal are: <br /> 
+A) <code class="language-plaintext highlighter-rouge">len()</code> <br /> 
+B) <code class="language-plaintext highlighter-rouge">trim()</code> <br /> 
+C) <code class="language-plaintext highlighter-rouge">split()</code> <br /> 
+D) <code class="language-plaintext highlighter-rouge">split_whitespace()</code> <br /></p>
+  </li>
+  <li>
+    <p>Trim method is used to remove inline spaces.<br /> 
+A) True <br /> 
+B) False <br /></p>
+  </li>
+</ol>
+
+:ET

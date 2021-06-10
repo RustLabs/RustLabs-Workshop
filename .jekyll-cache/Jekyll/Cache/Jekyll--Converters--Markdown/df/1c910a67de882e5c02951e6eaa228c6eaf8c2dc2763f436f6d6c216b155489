@@ -1,0 +1,119 @@
+I",<h1 id="bitwise-operators">Bitwise Operators</h1>
+
+<ul>
+  <li>What Are Bitwise Operators? 
+Bitwise operators deal with the binary representation of the operands.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/bit-ops.png" alt="" /></p>
+
+<h1 id="types">Types</h1>
+<p>The table below summarizes the types of bitwise operators in Rust.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>operator</th>
+      <th>operation</th>
+      <th>explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operand1 &amp; operand2</td>
+      <td>AND</td>
+      <td><br />bitwise AND operand1 and operand2</td>
+    </tr>
+    <tr>
+      <td>operand1 | operand2</td>
+      <td>OR</td>
+      <td>bitwise OR operand1 and operand2</td>
+    </tr>
+    <tr>
+      <td>operand1 ^ operand2</td>
+      <td>XOR</td>
+      <td>bitwise XOR operand1 and operand2</td>
+    </tr>
+    <tr>
+      <td>! operand1</td>
+      <td>NOT</td>
+      <td>Inverse the bit of operand</td>
+    </tr>
+    <tr>
+      <td>« operand</td>
+      <td>Left shift</td>
+      <td>moves all the operand1 to the left by the number of places specified in the operand 2 <br />new bits filled with zeros . shifting a value left by one position is equivalent to multiplying it by 2 ,<br />Shifting to positions is equivalent to multiplying it by 4 and so on</td>
+    </tr>
+    <tr>
+      <td>» operand</td>
+      <td>Right Shift</td>
+      <td>moves all the operand1 to the right by the number of places specified in the operand 2 <br />new bits filled with zeros . shifting a value right by one position is equivalent to multiplying it by 2 ,<br />Shifting to positions is equivalent to multiplying it by 4 and so on</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>📝 Note: Right shift » is same as arithmetic right shift on signed integer types, logical right shift on unsigned integer types.</p>
+
+<h1 id="example">Example</h1>
+
+<p>The example below shows the bitwise AND, OR, XOR, Left Shift, and Right Shift operations.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/bitwise.png" alt="" /></p>
+
+<p>The following example shows the use of bitwise operators in a program:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let a = 5;
+  let b = 6;
+  println!("Operand 1: {}, Operand 2: {}", a , b);
+  println!("AND: {}", a &amp; b);
+  println!("OR: {}", a | b);
+  println!("XOR: {}", a ^ b);
+  println!("NOT a: {}", !a);
+  println!("Left shift: {}", a &lt;&lt; 2);
+  println!("Right shift: {}", a &gt;&gt; 1);
+
+
+}
+
+</code></pre></div></div>
+<p>output :-</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Operand 1: 5, Operand 2: 6
+AND: 4
+OR: 7
+XOR: 3
+NOT a: -6
+Left shift: 20
+Right shift: 2
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>What is the output of the following code?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let mut a = 1;
+  let mut b = 2;
+  a = a &amp; b;
+  a = a &lt;&lt; 1;
+  b = b &gt;&gt; 3;
+  println!("a: {}", a);
+  println!("b: {}", b); 
+}
+
+</code></pre></div></div>
+
+<p>A) a: 0 <br />
+   b: 2  <br /></p>
+
+<p>B) a: 0  <br />
+   b: 0  <br /></p>
+
+<p>C) a: 2  <br />
+   b: 0  <br /></p>
+
+<p>D) a: 2  <br />
+   b: 2  <br /></p>
+
+:ET

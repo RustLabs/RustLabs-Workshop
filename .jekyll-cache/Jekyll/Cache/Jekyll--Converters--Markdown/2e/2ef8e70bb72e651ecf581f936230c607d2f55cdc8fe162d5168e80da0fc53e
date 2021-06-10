@@ -1,0 +1,62 @@
+I"v<h1 id="slicing-a-string">Slicing a String</h1>
+
+<p>What Is Slicing?</p>
+<ul>
+  <li>
+    <p>Slicing is used to get a portion of a string value.</p>
+  </li>
+  <li>Syntax
+The general syntax is:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let slice = &amp;string[start_index..end_index]
+</code></pre></div>    </div>
+    <p>Here,</p>
+  </li>
+  <li>start_index and end_index are the positions of starting and ending index of the original array respectively.
+    <ul>
+      <li>Note: The start_index is inclusive and end index is exclusive</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&amp;</code> indicates that the variable slice borrows the string.
+    <ul>
+      <li>Note: The minimum value of <code class="language-plaintext highlighter-rouge">start_index</code> is <code class="language-plaintext highlighter-rouge">0</code> and the maximum value is the size of the string</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   fn main() {
+   let string = "Rust Programming".to_string();
+   let slice = &amp;string[5..12]; 
+   // get characters at 5,6,7,8,9,10 and 11 indexes
+   println!("Slice : {}", slice);
+}
+   
+</code></pre></div></div>
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Slice : Program
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your knowledge of slicing a string in Rust.</p>
+
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+   let string = "Rust Programming".to_string();
+   let slice = &amp;string[0..3]; 
+   println!("{}", slice);
+}
+
+
+</code></pre></div></div>
+<p>A)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rust
+</code></pre></div></div>
+<p>B)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rus
+</code></pre></div></div>
+
+:ET

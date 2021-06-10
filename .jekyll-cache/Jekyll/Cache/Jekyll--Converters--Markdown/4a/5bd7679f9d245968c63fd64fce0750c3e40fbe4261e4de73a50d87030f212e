@@ -1,0 +1,96 @@
+I"ã	<h1 id="methods-of-structs">Methods of Structs</h1>
+
+<ul>
+  <li>What Are Methods?</li>
+</ul>
+
+<p>Methods are just like user-defined functions. They are like functions, but the only difference lies in the fact that methods are declared specifically 
+within the struct context.</p>
+
+<ul>
+  <li>Declare a Method</li>
+</ul>
+
+<p>The method is like a regular function except that the &amp;self parameter is passed to it and the items within the function are accessed through it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>self.ite
+</code></pre></div></div>
+<p>Here self is the calling instance, i.e., it is referencing to the struct.</p>
+
+<ul>
+  <li>Call a Method</li>
+</ul>
+
+<p>An instance of the struct has to be created to invoke it. This is similar to invoking a struct.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/method-struct-call.png" alt="" /></p>
+
+<p>Why struct method? The main advantage is that all the data related to the instance is put inside the <code class="language-plaintext highlighter-rouge">impl</code> block rather than putting it in different places.</p>
+
+<p># Example</p>
+
+<p>The example below shows declares a method <code class="language-plaintext highlighter-rouge">name_code</code> function within the <code class="language-plaintext highlighter-rouge">impl</code> construct:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//declare a struct
+
+struct Course {
+
+    name: String,
+
+    level: String,
+
+    code:i32
+
+}
+
+//impl construct to define struct methods
+
+impl Course {
+
+    fn name_code(&amp;self) -&gt; String {
+
+        format!("{} {}", self.name, self.code)
+
+    }
+
+}
+
+
+
+fn main() {
+
+    let course_1 = Course {
+
+        name: "Rust".to_string(),
+
+        level:"beginner".to_string(),
+
+        code:132
+
+    };
+
+    //call the non-static method
+
+    println!("This is a {} course: {}", course_1.level, course_1.name_code());
+
+}
+
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a beginner course: Rust 132
+
+</code></pre></div></div>
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of methods of structs.</p>
+
+<ol>
+  <li>Which code block has the method enclosed in it? <br />
+A) <code class="language-plaintext highlighter-rouge">impl</code> <br />
+B) <code class="language-plaintext highlighter-rouge">fn</code> <br /></li>
+</ol>
+
+:ET

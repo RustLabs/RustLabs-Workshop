@@ -1,0 +1,180 @@
+I"<h1 id="indefinite-loop---while-and-loop">Indefinite Loop - While and Loop</h1>
+
+<ul>
+  <li>While loop</li>
+</ul>
+
+<p>While loop also iterates until a specific condition is reached. However, in the case of a while loop, the number of iterations is not known in advance.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/while_loop.png" alt="" /></p>
+
+<ul>
+  <li>Syntax 
+The while keyword is followed by a condition that must be true for the loop to continue iterating and then begins the body of the loop.
+the general syntax is :</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/while_loop_syntax.png" alt="" /></p>
+
+<ul>
+  <li>Example</li>
+</ul>
+
+<p>The following example makes use of a while loop to print a variable value. The loop terminates when the variable’s value modulus <code class="language-plaintext highlighter-rouge">3</code> equals <code class="language-plaintext highlighter-rouge">1</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn main() {
+  let mut var = 1; //define an integer variable
+  let mut found = false; // define a boolean variable
+  // define a while loop
+  while !found {
+      var=var+1;
+      //print the variable
+      println!("{}", var);
+      // if the modulus of variable is 1 then found is equal to true
+      if var % 3 == 1 {
+        found = true; 
+      }
+      println!("Loop runs");
+  }
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+Loop runs
+3
+Loop runs
+4
+Loop runs
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+<ul>
+  <li>A mutable variable, var, is defined on line 2.</li>
+  <li>A mutable variable, found, is defined on line 3.</li>
+</ul>
+
+<h1 id="while-loop-definition">while loop definition</h1>
+
+<p>while loop is defined on line 5. while loop is followed by a variable found. found is initially set to false. !found means that the loop will continue to iterate until the value of found evaluates to be true.The loop terminates when found is set to true.
+From here the body of the while loop starts</p>
+
+<h1 id="while-loop-body">while loop body</h1>
+
+<ul>
+  <li>The body of the loop is defined from line 5 to line 14.</li>
+  <li>In each iteration:
+    <ul>
+      <li>The value of the variable var is incremented by 1 on line 6 and then printed on line 8.</li>
+      <li>If the value of the var modulus 3 is equal to 1, then the value of found is set to true else it prints “loop runs” on line 13 and the loop continues.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The following illustration traces the execution of the program:</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/while_loop_illu.png" alt="" /></p>
+
+<h1 id="loop">Loop</h1>
+
+<p>If you want the iteration to continue infinitely, then use the loop keyword before the block of code.</p>
+
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>The loop keyword is followed by the body of the loop enclosed within curly brackets <code class="language-plaintext highlighter-rouge">{}</code>.
+The general syntax is :</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/loop_syntax.png" alt="" /></p>
+
+<h1 id="example">Example</h1>
+
+<p>The following example shows how the loop runs infinitely using a loop.
+Note: The maximum time that is set for the code to run on our platform is 30sec. Since the code below runs more than that, it won’t execute here. However, the code will continue to run indefinitely.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  //define an integer variable
+  let mut var = 1; 
+  // define a while loop
+  loop {
+      var = var + 1;
+      println!("{}", var);
+  }
+}
+
+
+</code></pre></div></div>
+<p>output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Loop continues infinite times	
+
+</code></pre></div></div>
+<ul>
+  <li>Explanation</li>
+  <li>
+    <p>A mutable variable var is defined on line 3.</p>
+  </li>
+  <li>loop definition
+    <ul>
+      <li>loop is defined on line 5.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>From here the body of the loop starts</p>
+<ul>
+  <li>loop body
+    <ul>
+      <li>The body of the loop is defined from line 5 to line 8.</li>
+      <li>In each iteration, the value of the variable var is incremented by 1 on line 6 and then printed on line 7.</li>
+      <li>The loop continues to iterate infinitely.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of indefinite loops.</p>
+
+<ol>
+  <li>
+    <p>The number of iterations are known in which loop? <br />
+A) for <br />
+B) while <br /> 
+C) loop <br /></p>
+  </li>
+  <li>
+    <p>In a loop that has no terminating condition, which of the following is true? <br />
+A) program will give an error <br />
+B) program will run indefinite times <br /></p>
+  </li>
+  <li>
+    <p>How many times does the loop run? <br /></p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let mut var = 1; //define an integer variable
+  let mut found = false; // define a boolean variable
+  // define a while loop
+  while !found {
+      var=var+1;
+      //print the variable
+      println!("{}", var);
+      // if the modulus of variable is 1 then found is equal to true
+      if var % 3 == 1 {
+        found = true; 
+      }
+      println!("Loop runs");
+  }
+}
+
+</code></pre></div></div>
+<p>A) 1 <br />
+B) 2 <br />
+C) 3 <br /></p>
+
+:ET

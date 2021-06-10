@@ -1,0 +1,12 @@
+I"<p>A post with a single column.</p>
+
+<!--more-->
+
+<p><strong>front matter:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: article
+title: Page - Single
+---
+</code></pre></div></div>
+:ET

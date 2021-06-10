@@ -1,0 +1,45 @@
+I"8<h1 id="challenge-3---print-a-right-angled-triangle">Challenge 3 - Print a Right-Angled Triangle</h1>
+
+<h1 id="problem-statement">Problem Statement</h1>
+<ul>
+  <li>Write a code which prints a right-angled triangle of the character <code class="language-plaintext highlighter-rouge">&amp;</code>.</li>
+</ul>
+
+<p>The code takes an integer variable row as input and prints the right-angled triangle with that number of rows displaying <code class="language-plaintext highlighter-rouge">&amp;</code>.</p>
+
+<p>The base of the right-angled triangle is the input number, i.e., input of n will yield a triangle of base n</p>
+
+<p>Input</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> positive integer
+ 
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> right-angled triangle
+ 
+</code></pre></div></div>
+<p>Sample Input</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   5
+</code></pre></div></div>
+
+<p>Sample Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   &amp;
+   &amp;&amp;
+   &amp;&amp;&amp;
+   &amp;&amp;&amp;&amp;
+   &amp;&amp;&amp;&amp;&amp;
+   
+</code></pre></div></div>
+
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test(n:i32) {
+ // Write code here!
+}
+</code></pre></div></div>
+
+<p>Good luck! 🤞</p>
+:ET

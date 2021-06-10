@@ -1,0 +1,118 @@
+I"<p>Introduction to Functions</p>
+
+<ul>
+  <li>What Is a Function?</li>
+</ul>
+
+<p>A function is a block of code that can be reused. It is used to perform some specific tasks.</p>
+
+<ul>
+  <li>main Function</li>
+</ul>
+
+<p>The simplest possible function that we have studied so far is the main function that is declared with fn keyword. This is where the program execution starts.</p>
+
+<p>However, it is possible to define a user-defined function.</p>
+
+<ul>
+  <li>User-defined Functions</li>
+</ul>
+
+<p>The functions that are customized and are written by the programmer to perform the specified tasks.</p>
+
+<h1 id="define-a-function">Define a Function</h1>
+<p>A function is declared with the fn keyword.</p>
+
+<ul>
+  <li>Syntax 
+The general syntax is :</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/fn-syntax.png" alt="" /></p>
+
+<ul>
+  <li>Naming Convention: The convention for writing a function name is in a snake case, i.e.,
+    <ul>
+      <li>All letters should be lower case</li>
+      <li>All words should be separated by underscores</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="call-a-function">Call a Function</h1>
+<p>The function executes when it is invoked.</p>
+
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>The expression starts with the function name followed by the round brackets and then the semicolon. The function parameters may be added between the parentheses if needed.</p>
+
+<p>The general syntax for invoking a function:</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/invoke_fn.png" alt="" /></p>
+
+<p>Note: A user-defined function can be invoked from another function or the main function. It can be defined anywhere, above or below the main function.</p>
+
+<p>If a function is invoked but its definition does not exist, the compiler will throw a compilation error, ❌, such as 
+error[E0425]: cannot find function function_xyz in this scope.</p>
+
+<h1 id="example">Example</h1>
+<p>The following example makes a user-defined function and invokes it from within the main function.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//define a function
+fn display_message(){
+  println!("Hi, this is my user defined function");
+}
+//driver function
+fn main() {
+     //invoke a function
+      display_message();
+      println!("Function ended");
+}
+
+
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi, this is my user defined function
+Function ended
+</code></pre></div></div>
+<h1 id="explanation">Explanation</h1>
+
+<p>The above program comprises two functions, the user-defined function display_message() and the driver function main() where the function is being called.</p>
+
+<ul>
+  <li>User defined function</li>
+</ul>
+
+<p>The function <code class="language-plaintext highlighter-rouge">display_message()</code> is defined from line 2 to line 4. On line 3 a message is printed.</p>
+
+<ul>
+  <li>Driver function</li>
+</ul>
+
+<p>The driver <code class="language-plaintext highlighter-rouge">function main()</code> is defined from line 6 to line 10. On line 8 the function <code class="language-plaintext highlighter-rouge">display_message()</code> is invoked.</p>
+
+<h1 id="quiz">Quiz</h1>
+<p>Test your understanding of basics of functions in Rust!</p>
+
+<ol>
+  <li>What is the output of the following program?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn display_message(){
+    println!("Hi this is my user defined function");
+}
+fn main() {
+    display_message();
+    println!("function is called");
+}
+
+</code></pre></div></div>
+<p>A) Hi, this is my user defined function <br />
+  function is called  <br /></p>
+
+<p>B) Hi, this is my user defined function <br /></p>
+
+:ET

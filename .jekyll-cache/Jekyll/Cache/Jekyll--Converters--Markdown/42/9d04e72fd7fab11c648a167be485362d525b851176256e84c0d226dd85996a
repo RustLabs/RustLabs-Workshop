@@ -1,0 +1,150 @@
+I"Á<h1 id="traits">Traits</h1>
+
+<p>When there are multiple different types behind a single interface, the interface can tell which concrete type to access. 
+This is where the traits come in handy.</p>
+
+<ul>
+  <li>What Are Traits?</li>
+</ul>
+
+<p>Traits are used to define a standard set of behavior for multiple structs.</p>
+
+<p>They are like interfaces in Java.</p>
+
+<p>Suppose you want to calculate area for different shapes. We know that the area is calculated differently for every shape. The best solution is to make a trait and define an abstract method in it and implement that method within every struct impl construct.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-example.png" alt="" /></p>
+
+<h1 id="types-of-methods-in-traits">Types of Methods in Traits</h1>
+
+<p>There can be two types of methods in traits</p>
+
+<ul>
+  <li>Concrete Method
+    <ul>
+      <li>The method that has a body meaning that implementation of the method is done within the method.</li>
+    </ul>
+  </li>
+  <li>Abstract Method
+    <ul>
+      <li>The method that does not have a body meaning that implementation of the method is done by each struct in its own <code class="language-plaintext highlighter-rouge">impl</code> construct.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="declare-a-trait">Declare a Trait</h1>
+
+<p>Traits are written with a trait keyword.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-syntax.png" alt="" /></p>
+
+<ul>
+  <li>Naming Convention
+  Name of the trait is written in CamelCase</li>
+</ul>
+
+<h1 id="implement-a-trait">Implement a trait</h1>
+
+<p>Traits can be implemented for any structure.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/traits-syntax-impl.png" alt="" /></p>
+
+<p>Example</p>
+
+<p>The following example explains the concept of trait:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main(){
+
+   //create an instance of the structure
+
+   let c = Circle  {
+
+      radius : 2.0,
+
+   };
+
+   let r = Rectangle  {
+
+      width : 2.0,
+
+      height : 2.0,
+
+   };
+
+   println!("Area of Circle: {}", c.shape_area());
+
+   println!("Area of Rectangle:{}", r.shape_area());
+
+}
+
+//declare a structure
+
+struct Circle {
+
+   radius : f32,
+
+}
+
+struct Rectangle{
+
+    width : f32,
+
+    height : f32,
+
+}
+
+//declare a trait
+
+trait Area {
+
+   fn shape_area(&amp;self)-&gt;f32;
+
+}
+
+//implement the trait
+
+impl Area for Circle {
+
+   fn shape_area(&amp;self)-&gt;f32{
+
+      3.13* self.radius *self.radius
+
+   }
+
+}
+
+impl Area for Rectangle {
+
+   fn shape_area(&amp;self)-&gt;f32{
+
+      self.width * self.height
+
+   }
+
+}
+
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Area of Circle: 12.52
+Area of Rectangle:4
+
+</code></pre></div></div>
+<h1 id="quiz">Quiz</h1>
+<p>Test your understanding of traits in Rust.</p>
+
+<ol>
+  <li>
+    <p>Which of the following trait method allows you to write body of the method? <br />
+A) abstract <br />
+B) concrete <br /></p>
+  </li>
+  <li>
+    <p>Traits are like interfaces in other object oriented languages. <br />
+A) True <br />
+B) False <br /></p>
+  </li>
+</ol>
+
+:ET

@@ -1,0 +1,100 @@
+I"<h1 id="methods-of-enums">Methods of Enums</h1>
+
+<ul>
+  <li>
+    <p>What Are Methods? 
+Just like structs, methods are functions specific to enums.</p>
+  </li>
+  <li>
+    <p>Syntax</p>
+  </li>
+</ul>
+
+<p>To define methods of <code class="language-plaintext highlighter-rouge">enum</code> write the functions within the <code class="language-plaintext highlighter-rouge">impl</code> followed by the <code class="language-plaintext highlighter-rouge">enum</code> name and then the functions within the <code class="language-plaintext highlighter-rouge">impl</code> block.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/enum-method.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Move <code class="language-plaintext highlighter-rouge">enum</code> related logic in the <code class="language-plaintext highlighter-rouge">impl</code> construct</p>
+  </li>
+  <li>
+    <p>Example 
+The example below declares an <code class="language-plaintext highlighter-rouge">enum</code>, named <code class="language-plaintext highlighter-rouge">TrafficSignal</code> and defines an enum method <code class="language-plaintext highlighter-rouge">is_stop</code> within the <code class="language-plaintext highlighter-rouge">impl</code> construct:</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#![allow(dead_code)]
+#[derive(Debug)]
+// declare an enum
+enum TrafficSignal{
+  Red, Green, Yellow
+}
+//implement a Traffic Signal methods
+impl TrafficSignal{
+  // if the signal is red then return
+   fn is_stop(&amp;self)-&gt;bool{
+     match self{
+       TrafficSignal::Red=&gt;return true,
+       _=&gt;return false
+     }
+   }
+}
+fn main(){
+  // define an enum instance
+  let action = TrafficSignal::Red;
+  //print the value of action
+  println!("What is the signal value? - {:?}", action);
+  //invoke the enum method 'is_stop' and print the value
+  println!("Do we have to stop at signal? - {}", action.is_stop());
+}
+
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>What is the signal value? - Red
+Do we have to stop at signal? - true
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of methods of enum in Rust.</p>
+
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#![allow(dead_code)]
+#[derive(Debug)]
+enum TrafficSignal {
+  Red, Green, Yellow
+}
+impl TrafficSignal{
+   fn is_stop(&amp;self)-&gt;bool{
+     match self{
+       &amp;TrafficSignal::Red=&gt;return true,
+       _=&gt;return false
+     }
+   }
+}
+fn main(){
+  let action = TrafficSignal::Yellow;
+  println!("What is the signal value? - {:?}", action);
+  println!("Do we have to stop at signal? - {}", action.is_stop());
+}
+
+</code></pre></div></div>
+
+<p>A)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>What is the signal value? - Yellow
+Do we have to stop at signal? - false
+</code></pre></div></div>
+<p>B)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>What is the signal value? - Red
+Do we have to stop at signal? - true
+</code></pre></div></div>
+
+:ET

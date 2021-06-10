@@ -1,0 +1,53 @@
+I"à<h1 id="introduction-to-operators">Introduction to Operators</h1>
+
+<h1 id="operators">Operators</h1>
+<ul>
+  <li>An operator is a symbol that takes one or more values and outputs another. It tells the compiler to perform some sort of operation.</li>
+</ul>
+
+<h1 id="types-of-operators">Types of Operators</h1>
+<ul>
+  <li>Different operators are available in Rust for performing different operations. Based on the number of operands, the operators can be categorized into binary 
+and unary operators:</li>
+</ul>
+
+<h1 id="unary-operators">Unary Operators</h1>
+<ul>
+  <li>The operators that act upon a single operand are unary operators.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/operator1.png" alt="" /></p>
+
+<ul>
+  <li>Types
+    <ul>
+      <li>Borrow Expression</li>
+      <li>Dereference Expression</li>
+      <li>Negation Expression</li>
+      <li>Logical Negation Expression</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="binary-operators">Binary Operators</h1>
+<ul>
+  <li>The operators that deal with two operands are binary operators.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/operator2.png" alt="" /></p>
+
+<ul>
+  <li>Types
+    <ul>
+      <li>Arithmetic Expression</li>
+      <li>Logical Expression</li>
+      <li>Comparison Expression</li>
+      <li>Bitwise Expressions</li>
+      <li>Assignment Expression</li>
+      <li>Compound Assignment Expression</li>
+      <li>Typecast Expression</li>
+    </ul>
+  </li>
+</ul>
+
+:ET

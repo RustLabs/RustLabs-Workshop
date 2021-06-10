@@ -1,0 +1,44 @@
+I"	<h1 id="challenge-2-make-a-calculator">Challenge 2: Make a Calculator</h1>
+
+<h1 id="problem-statement">Problem Statement</h1>
+
+<ul>
+  <li>Write a code which will take:
+    <ul>
+      <li>Two variables named <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code></li>
+      <li>a character type variable called operator which will take operators <code class="language-plaintext highlighter-rouge">(+,-,/,*,%)</code> will be passed as input to our match statement</li>
+      <li>Use match statements to compute: addition of <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>, subtraction of <code class="language-plaintext highlighter-rouge">b</code> from <code class="language-plaintext highlighter-rouge">a</code>, multiplication of a and b, division of a by<code class="language-plaintext highlighter-rouge"> b</code>, modulus of<code class="language-plaintext highlighter-rouge"> a</code> by <code class="language-plaintext highlighter-rouge">b</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="sample-input">Sample Input</h1>
+<p>Suppose three inputs are given:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 3,  b = 2,  operator = '+' 
+a = 3 , b = 2,  operator = '(' 
+a = 3 , b = 0,  operator = '/' 
+</code></pre></div></div>
+<h1 id="sample-output">Sample Output</h1>
+<p>The output of the program corresponding to input:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5
+invalid operator
+Division by 0 is undefined
+</code></pre></div></div>
+
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<p>It is recommended​ that you try solving the exercise yourself before viewing the solution.</p>
+
+<p>Important Note: In the code below you only have to write the match construct. Assume that _a is the first number, _operator is the operator and _b is the second number.</p>
+
+<p>For any invalid operator passed as input the program should print invalid</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test(a: i32, operator: char, b: i32) {
+   // Write code here
+}
+
+</code></pre></div></div>
+<p>Good luck!🤞</p>
+:ET

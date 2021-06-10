@@ -1,0 +1,97 @@
+I"ø<h1 id="solution-1---find-the-factorial">Solution 1 - Find The Factorial</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn test(n:i32) {
+
+   let mut factorial = 1; // define a mutable variable factorial
+
+
+
+   if n &lt; 0 { // check if factorial is less than zero
+
+      println!("0"); // print 0
+
+   }
+
+   else if n == 0 {  // check if factorial is equal to 0
+
+      println!("1"); // print 1
+
+   }
+
+   else // go here if the above two conditions are false
+
+   {
+
+      for i in 1..n + 1{
+
+         factorial = factorial * i  
+
+      }
+
+      println!("{}", factorial); // print the factorial 
+
+   }
+
+}
+
+fn main(){
+
+    print!("factorial (4) : ");
+
+    test(4);
+
+    print!("factorial (6) : ");
+
+    test(6);
+
+}
+
+
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>factorial (4) : 24
+factorial (6) : 720
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>On line 2 a mutable variable factorial is initialized to 1.</li>
+  <li>if construct
+    <ul>
+      <li>As factorials exist only for positive numbers, the condition n &lt; 0 on line 4, checks if the value of input number n is less than 0 , it prints 0 on line 5.
+        <ul>
+          <li>if the if condition fails then else if is executed.</li>
+        </ul>
+      </li>
+      <li>else if construct
+        <ul>
+          <li>As the factorial of 0 is 1, the condition n == 0 on line 7, checks if the value of input number n is equal to 0 then it prints 1 on line 8.</li>
+          <li>if the else if condition fails then else block is executed.</li>
+        </ul>
+      </li>
+      <li>else construct
+        <ul>
+          <li>A for loop is defined within the else block.</li>
+        </ul>
+      </li>
+      <li>for loop definition
+        <ul>
+          <li>On line 12, the for loop iterates from 1 to n+1 times.</li>
+        </ul>
+      </li>
+      <li>
+        <p>for loop body
+     - Within each iteration, on line 13 factorial is multiplied with i and the updated value is saved in factorial.
+     - The loop iterates until the i is equal to n + 1.</p>
+      </li>
+      <li>The value of factorial is printed on line 15.</li>
+    </ul>
+  </li>
+</ul>
+:ET

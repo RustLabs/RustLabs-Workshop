@@ -1,0 +1,142 @@
+I"t<h1 id="the-use-keyword">The ‘use’ Keyword</h1>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/use-keyword.png" alt="" /></p>
+
+<h2 id="why-use-the-use-keyword">Why Use the use Keyword?</h2>
+<p>The benefit is greatest when items in the same module need to be referred to in the code again and again.
+Now, we don’t have to type the entire path over and over.</p>
+
+<p>The following example shows how we can write a precise code using a use keyword:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pub mod chapter {
+    pub mod lesson { // mod level 1
+        pub mod heading { // mod level 2
+            pub fn illustration() {  // mod level 3
+              println!("Hi, I'm a 3rd level nested function");
+            }
+        }
+    }
+}
+use chapter::lesson::heading; // make use of `use` keyword
+fn main() {
+    heading::illustration(); // call the function
+}
+
+
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi, I'm a 3rd level nested function
+
+</code></pre></div></div>
+
+<h1 id="glob-operator---">Glob Operator <code class="language-plaintext highlighter-rouge">( * )</code></h1>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/glob-operator.png" alt="" /></p>
+
+<p>The glob operator helps you to prevent writing <code class="language-plaintext highlighter-rouge">EnumName::variant</code> when assigning enum value to a variable.</p>
+
+<p>the following example shows how we can avoid writing a lengthy code using the glob operator <code class="language-plaintext highlighter-rouge">*</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// make this `enum` printable with `fmt::Debug`.
+
+#[derive(Debug)]
+
+enum KnightMove{
+
+   Horizontal,Vertical
+
+}
+
+
+
+use KnightMove::*; // use of globe operator
+
+fn main() {
+
+   // use enum
+
+   let horizontal_move = Horizontal; // Horizontal is shortcut for KnightMove::Horizontal
+
+   let vertical_move = Vertical; // Vertical is shortcut for KnightMove::Vertical
+
+   // print the enum values
+
+   println!("{:?}", horizontal_move);
+
+   println!("{:?}", vertical_move);
+
+}
+
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Horizontal
+Vertical
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of nested modules, the use keyword and the globe operator <code class="language-plaintext highlighter-rouge">*</code>!</p>
+
+<ol>
+  <li>
+    <p>You can only nest the modules upto three levels. <br />
+A) True <br />
+B) False <br /></p>
+  </li>
+  <li>
+    <p>The followinng enum is declared
+```
+enum Gender {
+ Male, Female
+}</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>How would you use the glob operator ?
+A)
+
+</code></pre></div></div>
+<p>use Gender :: *</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>B)
+
+</code></pre></div></div>
+<p>Gender :: *</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+3. What is the output of the following code? &lt;br&gt;
+
+</code></pre></div></div>
+<p>pub mod chapter {
+    pub mod lesson {
+        pub fn summary(){
+            println!(“This is the summary”); 
+        } 
+        pub mod heading { 
+            pub fn illustration() {<br />
+              println!(“Hi, I’m a 3rd level nested function”);
+            }
+        }
+    }
+}
+use chapter::lesson::heading;
+use chapter::lesson;</p>
+
+<p>fn main() {
+    lesson::summary();
+    heading::illustration(); 
+}</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A)
+</code></pre></div></div>
+<p>This is the summary
+Hi, I’m a 3rd level nested function</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>B)
+</code></pre></div></div>
+<p>Hi, I’m a 3rd level nested function
+```</p>
+
+:ET

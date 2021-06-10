@@ -1,0 +1,21 @@
+I"ž<div class="article__content">
+
+  <hr />
+
+  <p>Article list with cover and excerpt.</p>
+
+  <!--more-->
+
+  <p><strong>front matter:</strong></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: articles
+title: Articles - Item (Cover + Excerpt)
+articles:
+  data_source: site.sample_page
+  show_excerpt: true
+---
+</code></pre></div>  </div>
+
+</div>
+:ET

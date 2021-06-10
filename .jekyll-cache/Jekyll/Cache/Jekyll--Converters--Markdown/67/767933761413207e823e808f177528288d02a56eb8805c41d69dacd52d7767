@@ -1,0 +1,118 @@
+I"¦<h1 id="introduction-to-strings">Introduction to Strings</h1>
+
+<ul>
+  <li>What are Strings?</li>
+</ul>
+
+<p>Strings are a sequence of Unicode characters. In Rust, a String is not null-terminated unlike strings in 
+ other programming languages. They can contain null characters.</p>
+
+<p>Note: Have a look at the unicode characters</p>
+
+<h1 id="types-of-strings">Types of Strings</h1>
+<ul>
+  <li>Strings are of two types: &amp;str and String
+    <ul>
+      <li>String Literal <code class="language-plaintext highlighter-rouge">(&amp;str)</code></li>
+    </ul>
+  </li>
+  <li>A String literal has the following properties:
+    <ul>
+      <li>Primitive type</li>
+      <li>Immutable</li>
+      <li>Fixed-length string stored somewhere in memory</li>
+      <li>Value of string is known at compile time</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note: A String literal is also known as a String slice.</p>
+
+<h1 id="create-a-string-literal">Create a String Literal</h1>
+
+<p>The following illustration shows how to create a primitive string:</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/string_literal.png" alt="" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  //define a primitive String variable
+  let language:&amp;str = "Rust";
+  //print the String literal
+  println!("String literal: {}", language);
+  //print the length of the String literal
+  println!("Length of the string literal: {}", language.len());
+}
+
+</code></pre></div></div>
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>String literal: Rust
+Length of the string literal: 4
+
+</code></pre></div></div>
+
+<h1 id="string-object-string">String Object (String)</h1>
+
+<ul>
+  <li>A String object has the following properties:
+    <ul>
+      <li>A string is encoded as a UTF-8 sequence</li>
+      <li>Heap-allocated data structure</li>
+      <li>The size of this string can be modified</li>
+      <li>Not null-terminated</li>
+      <li>Encode string values that are given at the run time</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="create-a-string-object">Create a String Object</h1>
+
+<p>There are many different ways to create and manipulate String objects. We will discuss two here.</p>
+
+<h2 id="creating-an-empty-string-object">Creating an Empty String Object</h2>
+
+<p>This method converts the empty String or a String literal to a String object using the <code class="language-plaintext highlighter-rouge">.tostring</code> method.</p>
+
+<p>The following illustration creates an empty String and then converts into the string object using the <code class="language-plaintext highlighter-rouge">.to_string()</code> method.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/string-obj.png" alt="" /></p>
+
+<h2 id="creating-an-initialized-string-object">Creating an Initialized String Object</h2>
+
+<p>This method creates a string with some default value passed as an argument to the from() method.</p>
+
+<p>The following illustration creates a String literal and then converts it into the String object.</p>
+
+<p>(https://raw.githubusercontent.com/sangam14/RustLabs/master/img/string-obj-init.png)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // create an empty String
+  let course1 = String::new();
+  // convert String literal to String object using .to_string
+  let s_course1 = course1.to_string();
+  // print the String object
+  println!("This is an empty string {}.", s_course1);
+  // print the length of an empty String  object
+  println!("This is a length of my empty string {}.", s_course1.len());
+
+  // create a String literal
+  let course2 = "Rust Programming";
+  // convert String literal to string object using .to_string
+  let s_course2 = course2.to_string();
+  // print the String object
+  println!("This is a string literal : {}.", s_course2);
+  // print the length of a String object
+  println!("This is a length of my string literal {}.", s_course2.len());
+
+  // define a String object using from method
+  let course3 = String::from("Rust Language");
+  // print the String object
+  println!("This is a string object : {}.", course3);
+  // print the length of an string object
+  println!("This is the length of my string object {}.", course3.len());
+}
+
+</code></pre></div></div>
+
+<p>Note: len() is a built-in function used to find the length of a String literal and String object.</p>
+
+:ET

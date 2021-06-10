@@ -1,0 +1,14 @@
+I"∑<p>Fran√ßais.</p>
+
+<!--more-->
+
+<p><em>_config.yml</em> or front matter:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s">fr</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">fr-BE</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">fr-CA</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">fr-CH</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">fr-FR</span>
+<span class="na">lang</span><span class="pi">:</span> <span class="s">fr-LU</span>
+</code></pre></div></div>
+:ET

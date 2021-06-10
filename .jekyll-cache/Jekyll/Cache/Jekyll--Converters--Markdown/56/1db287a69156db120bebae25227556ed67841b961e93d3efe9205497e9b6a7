@@ -1,0 +1,200 @@
+I"�<h1 id="continue-statement">Continue Statement</h1>
+
+<ul>
+  <li>What Is a continue Statement?</li>
+</ul>
+
+<p>The continue statement, when encountered inside a loop, skips the execution of the rest of the statements in the loop’s body for the current 
+iteration and returns the control to the start of the loop.</p>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/continue_flow.png" alt="" /></p>
+
+<h1 id="using-with-a-for-loop">Using With a for Loop</h1>
+<ul>
+  <li>Below is an example of a continue expression, using a for loop.</li>
+  <li>The range defined in the for loop is from <code class="language-plaintext highlighter-rouge">0 </code>to <code class="language-plaintext highlighter-rouge">10</code> with var variable used for iterating over the loop
+    <ul>
+      <li>Within the for loop:
+        <ul>
+          <li>The value of var is printed</li>
+          <li>When the value of <code class="language-plaintext highlighter-rouge">var</code> is equal to <code class="language-plaintext highlighter-rouge">4</code>, the control goes to the start of the loop</li>
+          <li>The loop executes until the upper bound for the defined range is reached</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  fn main() {
+  // define a for loop
+  for var in 0..10 {
+     if var == 4 {
+        println!("I encoutered a continue statement");
+        continue;
+      }
+      println!("var: {}", var);
+      println!("I did not encounter continue statement");
+  }
+}
+  
+</code></pre></div></div>
+<p>output:-</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var: 0
+I did not encounter continue statement
+var: 1
+I did not encounter continue statement
+var: 2
+I did not encounter continue statement
+var: 3
+I did not encounter continue statement
+I encoutered a continue statement
+var: 5
+I did not encounter continue statement
+var: 6
+I did not encounter continue statement
+var: 7
+I did not encounter continue statement
+var: 8
+I did not encounter continue statement
+var: 9
+I did not encounter continue statement
+
+
+</code></pre></div></div>
+
+<h1 id="using-with-a-while-loop">Using With a while Loop</h1>
+<ul>
+  <li>Below is an example of continue expression, using a while loop.
+    <ul>
+      <li>A mutable variable var is defined</li>
+      <li>A boolean variable found is defined</li>
+    </ul>
+  </li>
+  <li>Within the while loop body:
+    <ul>
+      <li>The value of var is printed</li>
+      <li>When the value of var is equal to <code class="language-plaintext highlighter-rouge">4</code>, the control goes to the start of the loop.</li>
+      <li>The loop executes until the value of found does not equal true.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+    // define an integer variable
+    let mut var = 1; 
+    // define a boolean variable
+    let mut found = false;
+    // define a while loop
+    while !found {
+      var = var + 1;
+      println!("{}", var);
+      
+      if var == 4 {
+          println!("I encoutered a continue statement");
+          continue;
+        }
+        println!("I did not encounter continue statement");
+        
+        if var == 10{
+          found = true;
+        }
+    }
+}
+
+</code></pre></div></div>
+
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+I did not encounter continue statement
+3
+I did not encounter continue statement
+4
+I encoutered a continue statement
+5
+I did not encounter continue statement
+6
+I did not encounter continue statement
+7
+I did not encounter continue statement
+8
+I did not encounter continue statement
+9
+I did not encounter continue statement
+10
+I did not encounter continue statement
+
+</code></pre></div></div>
+<h1 id="using-with-a-loop">Using With a loop</h1>
+<ul>
+  <li>Below is an example of continue expression, using a loop .
+    <ul>
+      <li>A mutable variable var is defined</li>
+      <li>A boolean variable found is defined</li>
+    </ul>
+  </li>
+  <li>Within the loop body:
+    <ul>
+      <li>The value of var is printed</li>
+      <li>When the value of var is equal to <code class="language-plaintext highlighter-rouge">4</code> , the control goes to the start of the loop</li>
+      <li>The loop executes infinitely</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note: This code widget will give an error, ❌, due to limitations of our platform but on the local machine, it will run an infinite loop.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // define an integer variable
+  let mut var = 1; 
+  // define a loop
+  loop {
+    var = var + 1;
+    println!("{}", var);
+    
+     if var == 4 {
+        println!("I encoutered continue statement");
+        continue;
+      }
+      println!("I did not encounter continue statement");
+  }
+}
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of continue statement in Rust.</p>
+
+<ol>
+  <li>How many times is the statement “I did not encounter continue statement” printed in the code below?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+      let mut var = 1; 
+      let mut found = false;
+      while !found {
+          var = var + 1;
+          println!("{}", var);
+ 
+          if var == 5 {
+              println! ("I encoutered a continue statement");
+              continue;
+            }
+          println!("I did not encounter continue statement");
+ 
+           if var == 6 {
+               found = true;
+           }
+        }
+}
+
+
+</code></pre></div></div>
+
+<p>A) 4 <br />
+B) 5 <br />
+C) 6 <br /></p>
+
+:ET

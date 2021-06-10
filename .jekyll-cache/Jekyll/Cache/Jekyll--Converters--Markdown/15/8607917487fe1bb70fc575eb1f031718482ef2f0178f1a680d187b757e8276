@@ -1,0 +1,33 @@
+I"h<h1 id="challenge-defining-variables">Challenge: Defining Variables</h1>
+
+<ul>
+  <li>
+    <p>Problem Statement</p>
+
+    <ul>
+      <li>Declare a variable x and store value 1000 in it.</li>
+      <li>Declare a variable y and store value “Programming” in it</li>
+      <li>Print the values of x and y</li>
+      <li>Change the value of x to 1100</li>
+      <li>Print the values of x and y</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Output 
+The output of the code should be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x:1000
+y:Programming
+x:1100
+y:Programming
+
+</code></pre></div></div>
+<h1 id="coding-exercise">Coding Exercise</h1>
+<p>Good luck!🤞</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test() {
+ //Write code here
+}
+</code></pre></div></div>
+:ET

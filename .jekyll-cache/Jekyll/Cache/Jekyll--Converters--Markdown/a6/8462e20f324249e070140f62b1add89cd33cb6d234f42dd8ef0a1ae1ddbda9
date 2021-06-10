@@ -1,0 +1,64 @@
+I"Š<h1 id="solution-2-count-iterations-of-a-loop-until-a-condition">Solution 2: Count Iterations of a Loop Until a Condition</h1>
+
+<h1 id="solution">Solution:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test(mut x:i32) {
+    // define a mutable variable
+    let mut count = 0;
+    // define a while loop
+    while x &gt;= 0 { 
+       x = x - 3; // decrement the value of x by 3
+       count = count + 1;
+    }
+    println!("{}", count);
+}
+fn main(){
+    print!("Iterations when x = 21 :");
+    test(21);
+    print!("Iterations when x = 33 :");
+    test(33);
+}
+
+
+</code></pre></div></div>
+
+<p>output;-</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Iterations when x = 21 :8
+Iterations when x = 33 :12
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>
+    <p>On line 3, a mutable variable count is initialized with 0.</p>
+  </li>
+  <li>
+    <p>while construct</p>
+
+    <ul>
+      <li>
+        <p>while definition
+   On line 5,while condition x &gt;= 0 is defined i.e., the loop terminates when x becomes negative.</p>
+      </li>
+      <li>
+        <p>while body</p>
+      </li>
+      <li>
+        <p>The body of while loop is defined from line 5 to line 8.</p>
+        <ul>
+          <li>On line 6, a variable x is decremented by 3.</li>
+          <li>On line 7, the value of count is incremented each time within the loop.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>When the loop breaks, the value of count is printed which gives the total number of iterations of the while loop.</p>
+  </li>
+</ul>
+
+:ET

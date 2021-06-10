@@ -1,0 +1,107 @@
+I"„
+<h1 id="nested-loops">Nested Loops</h1>
+
+<ul>
+  <li>What Is a Nested Loop? 
+A nested loop is a loop within a loop.</li>
+  <li>Syntax 
+Here, a for loop nested inside a for loop. However, any loop can be nested inside any loop. The general syntax is:</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/nested_loop.png" alt="" /></p>
+
+<h1 id="example">Example</h1>
+
+<p>The following code prints a multiplication table of 1-5 using a nested for loop.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+ for i in 1..5{ //outer loop
+  println!("Multiplication Table of : {}", i);
+   for j in 1..5 { // inner loop
+       println!("{} * {} = {}", i, j, i * j);
+   }
+ }
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Multiplication Table of : 1
+1 * 1 = 1
+1 * 2 = 2
+1 * 3 = 3
+1 * 4 = 4
+Multiplication Table of : 2
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+Multiplication Table of : 3
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+Multiplication Table of : 4
+4 * 1 = 4
+4 * 2 = 8
+4 * 3 = 12
+4 * 4 = 16
+
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>Outer for Loop
+    <ul>
+      <li>A for loop is defined on line 2</li>
+      <li>The loop takes i as an iterator that iterates over values from 1 to 5.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Inner for Loop</p>
+
+    <ul>
+      <li>A for loop is defined on line 4</li>
+      <li>The loop takes j as an iterator that iterates over values from 1 to 5.</li>
+      <li>For each iteration of the outer loop, the inner loop runs four times while printing the product of variables i and j.</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>i</th>
+      <th>j</th>
+      <th>output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><br /><br />1</td>
+      <td>1<br /> 2<br /> 3<br /> 4</td>
+      <td><br />1 * 1 = 1<br />1 * 2 = 2<br />1 * 3 = 3<br />1 * 4 = 4<br /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1<br /> 2<br /> 3<br /> 4</td>
+      <td>2 * 1 = 2<br />2 * 2 = 4<br />2 * 3 = 6<br />2 * 4 = 8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1<br /> 2<br /> 3<br /> 4</td>
+      <td>3 * 1 = 3<br />3 * 2 = 6<br />3 * 3 = 9<br />3 * 4 = 12</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1<br /> 2<br /> 3<br /> 4</td>
+      <td>4 * 1 = 4<br />4 * 2 = 8<br />4 * 3 = 12<br />4 * 4 = 16</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Sometimes, you might need to break the outer loop instead of the inner loop. So how can you specify which loop you are referring to? You can use a loop label.</p>
+
+:ET

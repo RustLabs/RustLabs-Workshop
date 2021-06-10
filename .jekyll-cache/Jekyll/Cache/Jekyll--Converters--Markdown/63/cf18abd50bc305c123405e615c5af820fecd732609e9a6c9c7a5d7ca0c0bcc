@@ -1,0 +1,23 @@
+I"Y<h1 id="solution">Solution:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn test() {
+    print!("I am learning Rust programming language");
+}
+
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>
+    <p>On line 2, the statement “I am learning Rust programming language” is placed within the parentheses of the print! macro.</p>
+  </li>
+  <li>
+    <p>The output “I am learning Rust programming language” gets printed on the console.</p>
+  </li>
+</ul>
+
+<p>Up next is another coding challenge for you.</p>
+:ET

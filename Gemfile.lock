@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-text-theme (2.2.6)
+    RustLabs (2.2.6)
       jekyll (>= 3.6, < 5.0)
       jekyll-feed (~> 0.1)
       jekyll-paginate (~> 1.1)
@@ -98,8 +98,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RustLabs!
   bundler
-  jekyll-text-theme!
   rake (~> 10.0)
 
 BUNDLED WITH

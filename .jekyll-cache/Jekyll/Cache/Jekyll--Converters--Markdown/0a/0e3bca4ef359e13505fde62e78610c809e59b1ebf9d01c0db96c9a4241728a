@@ -1,0 +1,184 @@
+I"8<h1 id="updating-a-string">Updating a String</h1>
+
+<p>An existing string can be updated by appending a character or a string.</p>
+
+<p>💡 Why not make a new String rather than updating an existing one?</p>
+
+<p>Updating an existing String is useful when you want to make changes to an existing String at run time rather than compile one like,
+in situations where changes are made to the String on a condition.</p>
+
+<h1 id="push-a-single-character">Push a Single Character</h1>
+
+<p>There are cases when it is required to update a string by pushing a single character. One example is to create a string which contains a 
+single character repeated N times on a particular condition. Rust helps you do it by using the push method.</p>
+
+<ul>
+  <li>
+    <p>Steps to push a character to a String:</p>
+
+    <ul>
+      <li>Make a mutable string variable.</li>
+      <li>To push a single Unicode character to a String object, pass a character within the push() built-in method.</li>
+      <li>The following code shows how to do it!</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      fn main() {
+  // define a String object
+  let mut course = String::from("Rus");
+  // push a character
+  course.push('t');
+  println!("This is a beginner course in {}.", course);
+}
+   
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a beginner course in Rust.
+  
+</code></pre></div></div>
+<p>There are cases when it is required to grow a String by concatenating a
+new String to an existing String. Rust helps you do it by using the <code class="language-plaintext highlighter-rouge">push</code>,<code class="language-plaintext highlighter-rouge">+</code> operator and the format! macro method.</p>
+
+<h1 id="push-a-string">Push a String</h1>
+<p>Rust helps you to grow a String object using a <code class="language-plaintext highlighter-rouge">push_str</code> method.</p>
+
+<ul>
+  <li>Steps to push a String to a String:
+    <ul>
+      <li>Make a mutable String variable.</li>
+      <li>To push a string to a growable string variable, pass a character within the <code class="language-plaintext highlighter-rouge">push_str()</code> built-in method.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The following code shows how to do it</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  // define a string object
+  let mut course = String::from("Rust");
+  // push a string
+  course.push_str(" Programming");
+  println!("This is a beginner course in {}.", course);
+}
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a beginner course in Rust Programming.
+</code></pre></div></div>
+<h1 id="concatenation-using--operator">Concatenation Using <code class="language-plaintext highlighter-rouge">+</code> Operator</h1>
+
+<p>A String can be concatenated to another String using the <code class="language-plaintext highlighter-rouge">+</code> operator.
+ Note: The right-hand-side operand is to borrowed while concatenating using + operator.
+The following code shows how to do it!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#[allow(unused_variables, unused_mut)]
+fn main(){
+   // define a String object 
+   let course = "Rust".to_string();
+   // define a String object
+   let course_type = " beginner course".to_string();
+   // concatenate using the + operator
+   let result = course + &amp;course_type;
+   println!("{}", result);
+}
+
+</code></pre></div></div>
+<p>output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rust beginner course
+
+</code></pre></div></div>
+<h1 id="format-macro">Format Macro</h1>
+
+<p>To add two or more String objects together, there is a macro called format!. It takes variables or values and merges them in a single String.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Note: The format! macro allows concatenating in the desired order by passing a positive integer number within the placeholder. 
+If the number is not mentioned it will concatenate in the order of the values written.
+
+To display the result of format! macro, the result is to be saved in a variable.
+
+</code></pre></div></div>
+
+<p>The following code shows how to do it!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main(){
+  
+   let course = "Rust".to_string();
+   let _course_type = "beginner course".to_string();
+   // default format macro 
+   let result = format!("{} {}", course, _course_type);
+   // passing value in the placeholder in the format macro 
+   let result = format!("{1} {0}", course,_course_type);
+   println!("{}", result);
+}
+
+
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>beginner course Rust
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of updating a String in Rust.</p>
+
+<ol>
+  <li>Which of the following methods cannot be used for concatenating a string with another string?</li>
+</ol>
+
+<p>A) <code class="language-plaintext highlighter-rouge">+ operator</code> <br />
+B) Format macro <br />
+C) push_str <br />
+D) push <br /></p>
+
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let mut s = String::from("Learn ");
+  s.push('P');
+  s.push_str ("rogramming");
+  println!("{}!", s);
+  let res= format!("{}{}",s," in Rust");
+  println!("{}!", res);
+}
+
+</code></pre></div></div>
+<p>A)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Learn Programming!
+Learn Programming in Rust!
+
+</code></pre></div></div>
+<p>B)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Learn Programming in Rust!
+</code></pre></div></div>
+<ol>
+  <li>What is the output of the following code?</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let mut s = "Learn ";
+  s.push( 'P' );
+  s.push_str("rogramming");
+  println!("{}!", s);
+  let res = format!("{}{}", s, " in Rust");
+  println!("{}!", res);
+}
+
+</code></pre></div></div>
+<p>A)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Learn Programming!
+
+Learn Programming in Rust!
+
+</code></pre></div></div>
+<p>B)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax error
+</code></pre></div></div>
+
+:ET

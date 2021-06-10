@@ -1,0 +1,49 @@
+I"<h1 id="solution--defining-variables">Solution : Defining Variables</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test() {
+    // declare a mutable variable `x`
+    let mut x = 1000;
+    // declare a variable `y`
+    let y="Programming";
+    // print output of `x`
+    println!("x:{}", x);
+    // print output of `y`
+    println!("y:{}", y);
+    // update x
+    x = 1100;
+    // print output of `x`
+    println!("x:{}", x);
+    // print output of `y`
+    println!("y:{}", y);
+}
+
+
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+x:1000
+y:Programming
+x:1100
+y:Programming
+
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>Explanation</p>
+
+    <ul>
+      <li>On line 3, a mutable variable x is defined and assigned the value 1000.</li>
+      <li>On line 5, a variable y is defined and assigned the value Programming.</li>
+      <li>On line 7 and line 9, the value of x and y is printed respectively.</li>
+      <li>On line 11, the value of x is updated since x is mutable.</li>
+      <li>On line 13 and line 15, the values of x and y is printed respectively.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/explain_var.png" alt="" />
+Now you have learned the concept of variables, what they are, and how to create them. What if you want to define the type of value that goes inside the variable?
+now lets learn rustlabs - data types</p>
+
+:ET

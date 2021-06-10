@@ -1,0 +1,52 @@
+I"�<h1 id="solution--concatenate-words-starting-with-c">Solution : Concatenate Words Starting With ‘c’</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test(my_str:String)-&gt; String {
+
+    let mut my_updated_string = "".to_string(); 
+
+    for word in my_str.split(" "){
+
+         if word.starts_with("c"){
+
+             my_updated_string.push_str(word);
+
+             my_updated_string.push(' ');
+
+         }
+
+        }
+
+    my_updated_string.pop();
+
+    my_updated_string
+
+}
+
+fn main(){
+
+    let  my_str= "This is a comprehensive course in Rust programming language on rustlabs. Read it with full concentration to grasp the content of the labs";
+
+    println!("Original String: {}", my_str);
+
+    let updated_string = test(my_str.to_string());
+
+    println!("Updated String: {}", updated_string);
+
+}
+
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+<ul>
+  <li>On line 1, a String object <code class="language-plaintext highlighter-rouge">my_str</code> is passed as an argument.</li>
+  <li>On line 2, <code class="language-plaintext highlighter-rouge">my_updated_string</code> of type String is initialized with the value null.</li>
+  <li>On line 3, the string is traversed using a for loop that splits on whitespace using the <code class="language-plaintext highlighter-rouge">.split</code> method.</li>
+  <li>On line 4 to line 7, within the for loop, an if condition checks if the starting letter of the word (splitted on space) is c using the <code class="language-plaintext highlighter-rouge">starts_with()</code> method, then
+    - appends the word in <code class="language-plaintext highlighter-rouge">my_updated_string</code> on line <code class="language-plaintext highlighter-rouge">5</code>.
+    - appends the space in <code class="language-plaintext highlighter-rouge">my_updated_string</code> on line <code class="language-plaintext highlighter-rouge">6</code>.</li>
+  <li>On line 9, the appended space at the end is removed by using the pop function.</li>
+  <li>After the loop terminates the variable <code class="language-plaintext highlighter-rouge">my_updated_string()</code> is returned.</li>
+</ul>
+
+:ET

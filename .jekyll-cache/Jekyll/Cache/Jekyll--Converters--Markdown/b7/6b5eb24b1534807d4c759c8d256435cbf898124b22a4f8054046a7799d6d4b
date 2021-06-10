@@ -1,0 +1,21 @@
+I"~<div class="article__content">
+
+  <hr />
+
+  <p>Article list with grid layout.</p>
+
+  <!--more-->
+
+  <p><strong>front matter:</strong></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: articles
+title: Articles - Grid
+articles:
+  data_source: site.sample_page
+  type: grid
+---
+</code></pre></div>  </div>
+
+</div>
+:ET

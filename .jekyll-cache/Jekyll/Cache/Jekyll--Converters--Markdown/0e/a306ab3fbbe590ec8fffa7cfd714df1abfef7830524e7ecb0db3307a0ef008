@@ -1,0 +1,120 @@
+I"T<h1 id="what-is-recursion">What Is Recursion?</h1>
+
+<p>Recursion is a method of function calling in which a function calls itself during execution.</p>
+
+<p>There are problems which are naturally recursively defined. For instance, the factorial of a number nnn is defined as n times the factorial of n−1</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>factorial(n) = n * factorial(n-1)
+
+</code></pre></div></div>
+
+<h1 id="parts-of-recursion">Parts of Recursion</h1>
+
+<p>In terms of programming, a recursive function must comprise two parts:</p>
+
+<ul>
+  <li>Base case
+    <ul>
+      <li>A recursive function must contain a base case. This is a condition for the termination of execution.</li>
+    </ul>
+  </li>
+  <li>Recursive case
+    <ul>
+      <li>The function keeps calling itself again and again until the base case is reached.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="example">Example</h1>
+
+<p>The following example computes the factorial of a number using recursion:</p>
+
+<p>Note: A factorial is defined only for non-negative integer numbers.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // main function
+fn main(){
+    // call the function
+    let n = 4;
+    let fact = factorial(n);
+    // print the factorial
+    println!("factorial({}): {}", n, fact);
+}
+// define the factorial function
+fn factorial(n: i64) -&gt; i64 {
+    if n == 0 { // base case
+        1
+    }
+    else {
+        n * factorial(n-1) // recursive case
+    }
+}
+ 
+ 
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
+ factorial(4): 24
+ 
+</code></pre></div></div>
+
+<p># Explanation</p>
+
+<p>main function</p>
+
+<ul>
+  <li>
+    <p>The main function is defined from line <code class="language-plaintext highlighter-rouge">2</code> to line <code class="language-plaintext highlighter-rouge">7</code>.</p>
+
+    <ul>
+      <li>
+        <p>On line <code class="language-plaintext highlighter-rouge">4</code>, a call is made to function factorial with an argument passed to the function and the return value is saved in the variable fact.</p>
+      </li>
+      <li>
+        <p>On line <code class="language-plaintext highlighter-rouge">6</code>, the value of the variable fact is printed, i.e., the factorial of the number being passed as an argument.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>factorial function</p>
+
+    <ul>
+      <li>The factorial function is defined from <code class="language-plaintext highlighter-rouge">line 9</code> to <code class="language-plaintext highlighter-rouge">line 16</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>function definition</p>
+
+    <ul>
+      <li>The function takes a parameter n of type i64.</li>
+    </ul>
+  </li>
+  <li>
+    <p>function body</p>
+  </li>
+  <li>
+    <p>The recursive function is made up of two parts.</p>
+
+    <ul>
+      <li>
+        <p>base case</p>
+      </li>
+      <li>
+        <p>On line 10, the base case is defined. Since the value of n is decremented in every recursive function call, the function terminates when
+ the value of n becomes equal to 0 on successive recursive calls.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>recursive case</p>
+  </li>
+  <li>
+    <p>On line 14, the recursive case is defined. The value n gets multiplied with factorial(n-1) and gets pushed on the memory stack. Since the value of n is decremented in every function call, the function keeps on calling itself
+repeatedly until the base case is reached. As soon as the base case is reached, 
+factorial(0) is calculated and the value is used in the immediate expression in the memory stack. The <code class="language-plaintext highlighter-rouge">factorial(1)</code> is calculated from <code class="language-plaintext highlighter-rouge">1∗factorial(0)</code>.
+factorial(2) is calculated from <code class="language-plaintext highlighter-rouge">2∗factorial(1)</code> This process <code class="language-plaintext highlighter-rouge">n∗factorial(n−1)</code>continues until the last value is freed from the memory stack</p>
+  </li>
+</ul>
+
+:ET

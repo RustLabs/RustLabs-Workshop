@@ -1,0 +1,27 @@
+I"0<h1 id="challenge-1-declare-an-array">Challenge 1: Declare an Array</h1>
+
+<h1 id="problem-statement">Problem Statement</h1>
+<ul>
+  <li>Declare an array, arr, of size 6 that has numbers divisible by 2 ranging from 0 to 10.</li>
+  <li>Print the value of arr</li>
+</ul>
+
+<h1 id="output">Output</h1>
+
+<p>The output of the code should be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0,2,4,6,8,10
+
+</code></pre></div></div>
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<p>It is recommended​ that you try solving the exercise yourself before viewing the solution.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+fn test() {
+ // Write code here!
+}
+
+</code></pre></div></div>
+<p>Good luck!🤞</p>
+:ET

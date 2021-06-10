@@ -1,0 +1,35 @@
+I",<h1 id="solution--calculate-a--b3">Solution : Calculate (a + b)^3</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test() {
+    let a = 2;
+    let b = 2;
+    let c = i32::pow(a,3) + i32::pow(b, 3) + ( 3 * a * b * (a + b)) ; 
+    println!("{}",c);  
+}
+
+</code></pre></div></div>
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>64
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>On line 2, a variable a with value 2 is declared. <br /></li>
+  <li>On line 3, a variable b with value 2 is declared. <br /></li>
+  <li>
+    <p>On line 4, addition takes place of : <br /></p>
+
+    <ul>
+      <li>a​3​​ ( calculated using the function pow)</li>
+      <li>b​3​​ ( calculated using the function pow)</li>
+      <li>3∗a∗b( multiplied with (a+b))(a + b))(a+b))</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Now you have learned about operators, what if you want to perform an operation on a specific condition?</p>
+
+:ET

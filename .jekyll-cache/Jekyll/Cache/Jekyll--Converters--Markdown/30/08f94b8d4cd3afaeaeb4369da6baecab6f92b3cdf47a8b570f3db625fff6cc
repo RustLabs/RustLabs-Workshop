@@ -1,0 +1,37 @@
+I"�<h1 id="challenge-calculate-a--b3">Challenge: Calculate (a + b)^3</h1>
+
+<p>Problem Statement #</p>
+
+<p>The task is to compute <code class="language-plaintext highlighter-rouge">(a+b)3(a + b)^3(a+b)​3​​ </code>and display it on the console. The following mathematical formula is expanded as:</p>
+
+<p><code class="language-plaintext highlighter-rouge">(a+b)​3​​=a​3​​+b​3​​+3ab(a+b)</code></p>
+
+<h1 id="sample-input">Sample Input</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+a = 2
+b = 2
+
+</code></pre></div></div>
+
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>64
+
+</code></pre></div></div>
+
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<p>It is recommended​ that you try solving the exercise yourself before viewing the solution.</p>
+
+<p>Important Note: The power of xyx^yx​y​​ is calculated as datatype :: pow(x,y). Here, the data type is the return value of the power function.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> fn test() {
+    let a = 2;
+    let b = 2;
+    // Write code here!
+}
+</code></pre></div></div>
+
+<p>Good luck!🤞</p>
+
+:ET

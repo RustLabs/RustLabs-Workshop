@@ -1,0 +1,57 @@
+I"�
+<h1 id="solution---resizing-a-vector">Solution - Resizing a Vector</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test(my_vec: &amp;mut Vec&lt;u32&gt;)-&gt; &amp;mut Vec&lt;u32&gt;{
+   let middle = (my_vec.len())/2;
+   my_vec.pop(); 
+   my_vec.remove(middle - 1);
+   let mut sum : u32 = 0;
+   for v in my_vec.iter()
+   {
+      sum = sum + v;
+   }
+   my_vec.push(sum);
+   my_vec
+}
+fn main(){
+    let mut v1 = vec![1, 5, 7, 9];
+    println!("Original Vector: {:?}", v1);
+    println!("Updated Vector: {:?}", test(&amp;mut v1));
+    let mut v2 = vec![1, 2, 3, 1, 2, 6];
+    println!("Original Vector: {:?}", v2);
+    println!("Updated Vector: {:?}", test(&amp;mut v2));
+}
+
+
+
+</code></pre></div></div>
+
+<p>output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Original Vector: [1, 5, 7, 9]
+Updated Vector: [1, 7, 8]
+Original Vector: [1, 2, 3, 1, 2, 6]
+Updated Vector: [1, 2, 1, 2, 6]
+
+</code></pre></div></div>
+
+<h1 id="explanation">Explanation</h1>
+
+<ul>
+  <li>A function test is declared with<code class="language-plaintext highlighter-rouge"> my_vec</code> of type <code class="language-plaintext highlighter-rouge">u32</code> passed to it as a parameter.
+    <ul>
+      <li>On <code class="language-plaintext highlighter-rouge">line 2</code>, a number is removed from the last index using pop function, so the <code class="language-plaintext highlighter-rouge">number 9</code> (the last element) gets removed.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 3</code>, a number is removed at position 1 using the remove function, so the <code class="language-plaintext highlighter-rouge">number 5</code> (the middle element) gets removed.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 4</code>, a mutable variable sum is initialized to 0.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 5</code>, a variable sum stores the summation of elements of the vector by iterating using a for loop over the vector using my_vec.iter()</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 6</code>, a sum is added to the last index of my_vec using push function.</li>
+      <li>On <code class="language-plaintext highlighter-rouge">line 7</code>, myvec is returned.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/solution_vec-resize.png" alt="" /></p>
+
+<p>Now that you have learned about vectors, what if you want to group variables having some similarity to be placed under one name in a block of memory, let’s learn about “structs”</p>
+
+:ET

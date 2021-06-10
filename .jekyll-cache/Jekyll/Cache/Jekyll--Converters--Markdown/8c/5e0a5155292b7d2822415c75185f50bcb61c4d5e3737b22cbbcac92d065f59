@@ -1,0 +1,27 @@
+I"$<h1 id="challenge-1-display-output">Challenge 1: Display Output</h1>
+
+<ul>
+  <li>Problem Statement</li>
+</ul>
+
+<p>You have to print the following statement to the console:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"I am learning Rust programming language"
+
+</code></pre></div></div>
+
+<h1 id="coding-exercise">Coding Exercise</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn test() {
+  //Write code here
+}
+
+</code></pre></div></div>
+
+<p>Write your code below. It is recommended​ that you try solving the exercise yourself before viewing the solution.</p>
+
+<p>Note: There is a test function given in the code for testing purposes. Do not modify it.</p>
+
+<p>Good luck!🤞</p>
+
+:ET

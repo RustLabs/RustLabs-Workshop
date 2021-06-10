@@ -1,0 +1,22 @@
+I"¤<div class="article__content">
+
+  <hr />
+
+  <p>Article list with grid layout in small size.</p>
+
+  <!--more-->
+
+  <p><strong>front matter:</strong></p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: articles
+title: Articles - Grid (Small Size)
+articles:
+  data_source: site.sample_page
+  type: grid
+  size: sm
+---
+</code></pre></div>  </div>
+
+</div>
+:ET

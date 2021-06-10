@@ -1,0 +1,113 @@
+I"
+<h1 id="arithmetic-operators">Arithmetic Operators</h1>
+
+<ul>
+  <li>What Are Arithmetic Operators?
+    <ul>
+      <li>Arithmetic operators are used to perform arithmetic operations.</li>
+    </ul>
+  </li>
+  <li>Types 
+The table below summarizes the arithmetic operations in Rust.
+<img src="https://raw.githubusercontent.com/sangam14/RustLabs/master/img/arth-op.png" alt="" /></li>
+</ul>
+
+<h1 id="types">Types</h1>
+<p>The table below summarizes the arithmetic operations in Rust.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>operator</th>
+      <th>operation</th>
+      <th>explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>operand1 + operand2</td>
+      <td>addition</td>
+      <td>add operand1 and operand2</td>
+    </tr>
+    <tr>
+      <td>operand1 - operand2</td>
+      <td>subtraction</td>
+      <td>subtract operand2 from operand1</td>
+    </tr>
+    <tr>
+      <td>operand1 / operand2</td>
+      <td>divide</td>
+      <td>divide operand1 by operand2</td>
+    </tr>
+    <tr>
+      <td>operand1 * operand2</td>
+      <td>multiplication</td>
+      <td>multiply operand1 with operand2</td>
+    </tr>
+    <tr>
+      <td>operand1 % operand2</td>
+      <td>modulus</td>
+      <td>get reminder of operand1 by dividing with operand2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following example shows the use of arithmetic operators in a program:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+    let a = 4;
+    let b = 3;
+    
+    println!("Operand 1:{}, Operand 2:{}", a , b);
+    println!("Addition:{}", a + b);
+    println!("Subtraction:{}", a - b);
+    println!("Multiplication:{}", a * b);
+    println!("Division:{}", a / b);
+    println!("Modulus:{}", a % b);
+}
+
+</code></pre></div></div>
+
+<p>output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Operand 1:4, Operand 2:3
+Addition:7
+Subtraction:1
+Multiplication:12
+Division:1
+Modulus:1
+
+</code></pre></div></div>
+
+<h1 id="quiz">Quiz</h1>
+
+<p>Test your understanding of arithmetic operators in Rust!</p>
+
+<p>a) What is the output of the following code?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fn main() {
+  let mut a = 4;
+  let mut b = 3;
+  a = a + b;
+  a = a * b;
+  a = a - b;
+  b = b - a;
+  println!("a:{}", a);
+  println!("b:{}", b);
+   
+}
+
+</code></pre></div></div>
+<p>A) a:18 <br /></p>
+
+<p>b:-15 <br /></p>
+
+<p>B) a:15 <br /></p>
+
+<p>b:18 <br /></p>
+
+<p>C) a:18 <br /></p>
+
+<p>b:15 <br /></p>
+
+:ET
