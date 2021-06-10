@@ -71,16 +71,14 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.5.3)
     minitest (5.14.4)
-    nokogiri (1.11.6)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.11.6-x86_64-darwin)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.5.2)
-    rake (12.3.3)
+    rake (12.3.2)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -102,12 +100,7 @@ PLATFORMS
 DEPENDENCIES
   RustLabs!
   bundler
-<<<<<<< HEAD
-  rake (~> 10.0)
-=======
-  jekyll-text-theme!
   rake (~> 12.3)
->>>>>>> 989b2fdc08b00823fc5d3de0da4fca4f110860a3
 
 BUNDLED WITH
    2.0.2
