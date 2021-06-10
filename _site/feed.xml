@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://sangam14.github.io/newrustlabs//feed.xml" rel="self" type="application/atom+xml" /><link href="https://sangam14.github.io/newrustlabs//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-06-10T09:02:19+08:00</updated><id>https://sangam14.github.io/newrustlabs//feed.xml</id><title type="html">RustLabs</title><subtitle>RustLabs Community 
+</subtitle><author><name>TeXt</name><email>kitian616@outlook.com</email></author><entry><title type="html">Blog - What’s NEXT</title><link href="https://sangam14.github.io/newrustlabs//post/2019/10/09/what-next.html" rel="alternate" type="text/html" title="Blog - What’s NEXT" /><published>2019-10-09T00:00:00+08:00</published><updated>2019-10-09T00:00:00+08:00</updated><id>https://sangam14.github.io/newrustlabs//post/2019/10/09/what-next</id><content type="html" xml:base="https://sangam14.github.io/newrustlabs//post/2019/10/09/what-next.html">&lt;p&gt;Dark Mode is cool, and TeXt is supporting it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/blog/dark-mode.gif&quot; alt=&quot;Dark Mode&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p class=&quot;info&quot;&gt;Trying to use &lt;a href=&quot;https://github.com/postcss/postcss&quot;&gt;PostCSS&lt;/a&gt; for CSS Variable Polyfill and Auto Prefix.&lt;/p&gt;
+
+&lt;p&gt;It is developing on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dev&lt;/code&gt; branch, you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout dev&lt;/code&gt; to switch to this branch.&lt;/p&gt;
+
+&lt;p&gt;For now, ONLY &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt; skin supports Dark Mode.&lt;/p&gt;</content><author><name>TeXt</name><email>kitian616@outlook.com</email></author><category term="post" /><category term="Blog" /><summary type="html">Dark Mode is cool, and TeXt is supporting it.</summary></entry></feed>
