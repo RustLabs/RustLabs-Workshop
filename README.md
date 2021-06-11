@@ -1,6 +1,5 @@
 
 [Join RustLabs Community](https://discord.gg/aU3yAmF) 
-![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Frustlabs.kubedaily.com%2F) <br>
 
 ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/rustbanner.png)
 
