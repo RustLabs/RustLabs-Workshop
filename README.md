@@ -1,29 +1,17 @@
----
-layout: default
-title: An Ultimate RustLabs Hands-on Labs
-nav_order: 1
-description: " An Ultimate RustLabs Hands-on Labs  "
-permalink: /
----
-[Join RustLabs Community](https://discord.gg/aU3yAmF){: .btn .btn-green .mr-4 } [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K0E60M)
+
+[Join RustLabs Community](https://discord.gg/aU3yAmF) 
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Frustlabs.kubedaily.com%2F) <br>
 
 ![img](https://raw.githubusercontent.com/sangam14/RustLabs/master/img/rustbanner.png)
 
 The Ultimate Workshop Track Specially Designed For You - Select Learning Paths 
-{: .label .label-blue }
 
-[Rust for Beginners](http://rustlabs.kubedaily.com/Beginners/README.html){: .btn .btn-purple .mr-2 } [Rust for Beginners - Standard Library ](){: .btn .btn-purple .mr-2 } [Data Structures and Algorithms](){: .btn .btn-purple .mr-2 } [Rust for Intermediate](){: .btn .btn-purple .mr-2 }   
 
 # Rustlabs Community 
 
 Rustlabs is an independent community project founded by [Sangam Biradar](https://twitter.com/BiradarSangam/), Docker Community Leader,Traefik Ambassdor,Okteto Community lead ,India .Mostly Works on Cloud_Native . Rustlabs which is now growing community and He is frequently mentoring and educating free of cost ! 
 
 # Rustlabs Episodes Series 
-
-| title                                                                                 | videos  |
-|---------------------------------------------------------------------------------------|---------|
-| Episode 01 - Getting Started With Rust - Part 1  | [YouTube](https://www.youtube.com/watch?v=QrIvsftiVnQ)  |
 
 email if you want to be part of any episode :- kubedaily@gmail.com 
 
