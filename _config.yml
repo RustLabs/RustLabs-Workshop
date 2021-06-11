@@ -132,7 +132,7 @@ comments:
   gitalk:
     clientID    : aade94f90e5758a25870
     clientSecret: e242474aa193cc3b934be1d435adfc3b947a903d
-    repository  : gitalk-demo
+    repository  : RustLabs
     owner       : sangam14
     admin:
       - sangam14
