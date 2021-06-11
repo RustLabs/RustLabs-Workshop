@@ -4,15 +4,10 @@ header:
   - title:      Docs
     url:        /docs/en/why-rust
     key:        docs
-  - title:      Samples
-    url:        /samples.html
-    key:        samples
-  - title:      Archive
-    url:        /archive.html
   - title:      About
     url:        /about.html
   - title:      GitHub
-    url:        https://github.com/kitian616/jekyll-TeXt-theme
+    url:        https://github.com/sangam14/RustLabs
 
 
 docs-en:
