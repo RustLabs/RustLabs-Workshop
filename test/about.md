@@ -24,4 +24,4 @@ Rustlabs which is now growing community and He is frequently mentoring and educa
 
 <br>
 
-{%- include extensions/youtube.html id='DIxjk0HTx5U' -%}
+<div>{%- include extensions/youtube.html id='DIxjk0HTx5U' -%}</div>

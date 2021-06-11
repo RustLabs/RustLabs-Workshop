@@ -31,4 +31,5 @@ Rustlabs is an independent community project founded by Sangam Biradar , Develop
 Rustlabs which is now growing community and He is frequently mentoring and educating free of cost !
 
 <br>
-{%- include extensions/youtube.html id='DIxjk0HTx5U' -%}
+
+<div>{%- include extensions/youtube.html id='DIxjk0HTx5U' -%}</div>
