@@ -130,12 +130,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 143666b578a416f82175
-    clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775
+    clientID    : aade94f90e5758a25870
+    clientSecret: e242474aa193cc3b934be1d435adfc3b947a903d
     repository  : gitalk-demo
-    owner       : kitian616
+    owner       : sangam14
     admin:
-      - kitian616
+      - sangam14
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
