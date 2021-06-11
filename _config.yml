@@ -51,7 +51,7 @@ author:
   zhihu     :
   douban    :
   linkedin  :
-  github    : https://github.com/sangam14/RustLabs
+  github    : https://github.com/sangam14/
   npm       :
 
 
@@ -154,9 +154,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
-    app_key   : Mzf5m9skSwYVWVXhGiYMNyXs
-    app_class : TeXtDemo
+    app_id    : 
+    app_key   : 
+    app_class :
 
 
 ## => Search
