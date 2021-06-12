@@ -4,4 +4,4 @@ key: 20210101
 tags: YouTube
 ---
 
-</div>{%- include extensions/youtube.html id='Ws0wtJ_WTDc' -%}</div>
+</div>{%- include extensions/youtube.html id='bjzOgnMktXA' -%}</div>
