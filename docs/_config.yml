@@ -17,18 +17,18 @@
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://tianqi.name
-baseurl : /jekyll-TeXt-theme
-title   : TeXt Theme
+highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : https://sangam14.github.io/newrustlabs/
+baseurl : /
+title   : RustLabs
 description: >
-  A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
+   RustLabs Community 
 
 
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
-timezone: Asia/Shanghai
+timezone: Asia/kolkata
 
 
 ## => Author and Social
@@ -41,23 +41,23 @@ author:
   bio: >
     TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
     Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
-  email     : kitian616@outlook.com
+  email     : 
   facebook  :
-  twitter   : kitian616
-  weibo     : 234695683
-  googleplus: 101827554735084402671
+  twitter   : kubedaily
+  weibo     : 
+  googleplus: 
   telegram  :
   medium    :
   zhihu     :
   douban    :
   linkedin  :
-  github    : kitian616/jekyll-TeXt-theme
+  github    : sangam14
   npm       :
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: kitian616/jekyll-TeXt-theme
+repository: https://github.com/sangam14/RustLabs
 repository_tree: master
 
 
@@ -114,7 +114,7 @@ sharing:
 
   ## AddThis
   addthis:
-    id: ra-5be59ee2486770cb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+    id: ra-60c2a8e71a9860a3 # AddThis pubid, e.g. ra-5xxxxxxxxxxx
 
 
 ## => Comments
@@ -125,23 +125,23 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: kubedaily
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 143666b578a416f82175
-    clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775
-    repository  : gitalk-demo
-    owner       : kitian616
+    clientID    : 
+    clientSecret: 
+    repository  : 
+    owner       : 
     admin:
-      - kitian616
+      - 
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
   valine:
-    app_id      : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
-    app_key     : Mzf5m9skSwYVWVXhGiYMNyXs
+    app_id      : 
+    app_key     : 
     placeholder : # Prompt information
     visitor     : # false (default)
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
@@ -154,9 +154,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
-    app_key   : Mzf5m9skSwYVWVXhGiYMNyXs
-    app_class : TeXtDemo
+    app_id    : 
+    app_key   : 
+    app_class :
 
 
 ## => Search
@@ -176,7 +176,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : UA-71907556-1
+    tracking_id : 
     anonymize_ip: false
 
 
