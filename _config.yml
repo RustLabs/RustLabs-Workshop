@@ -28,7 +28,7 @@ description: >
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
-timezone: Asia/Shanghai
+timezone: Asia/kolkata
 
 
 ## => Author and Social
@@ -51,7 +51,7 @@ author:
   zhihu     :
   douban    :
   linkedin  :
-  github    : https://github.com/sangam14/
+  github    : sangam14
   npm       :
 
 
