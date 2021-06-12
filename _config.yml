@@ -35,12 +35,11 @@ timezone: Asia/kolkata
 ##############################
 author:
   type      : organization # "person" (default), "organization"
-  name      : TeXt
-  url       :
-  avatar    : /assets/apple-touch-icon.png
-  bio: >
-    TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
-    Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+  name      : 
+  url       : 
+  avatar    : /assets/favicon.ico
+  bio: >  RustLabs Community 
+
   email     : 
   facebook  :
   twitter   : kubedaily
