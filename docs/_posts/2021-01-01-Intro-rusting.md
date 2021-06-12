@@ -5,6 +5,7 @@ tags: Blog
 ---
 
 
-</div> {%- include extensions/youtube.html id='0KwAjTZ-CSg' -%} </div>
+
+</div>{%- include extensions/youtube.html id='0KwAjTZ-CSg' -%}</div>
 
 
