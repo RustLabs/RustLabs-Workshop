@@ -33,6 +33,8 @@ docs-en:
         url:    /docs/en/solution-display-output-using-placeholders
       - title:  what are variables?
         url:    /docs/en/variables
+      - title:  scope and shadowing
+        url:    /docs/en/scope-shadowing
       - title:  challenge - defining variables
         url:    /docs/en/defining-variables
       - title:  Solution - Defining Variables
